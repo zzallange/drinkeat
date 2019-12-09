@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+.container {margin-top: 60px;}
+.drk_fttop {display: none;}
+.drk_sitemap {padding:80px 0 100px;}
+.drk_sitemap .map_head {margin-bottom: 40px;}
+.drk_sitemap .map_head:after {content: ''; display: block; clear: both;}
+.drk_sitemap .map_head .title {float: left;position: relative; font-size: 33px; line-height: 1; letter-spacing: -2px; text-align: left; font-family: 'notorkL';} 
+.drk_sitemap .map_head .title:after {content: '';display: block; position: absolute;top: 2px; right: -20px; width: 2px; height: 95%;background: #111;}
+.drk_sitemap .map_head p {float: left;margin:13px 0 0 35px;font-size: 21px; line-height: 1; letter-spacing: -2px; color: #595959;}
+
+.drk_sitemap .map_cont {margin: 0 auto; width: 1000px;}
+.drk_sitemap .map_cont:after {content:'';display: block;clear: both;}
+
+.drk_sitemap .map_cont .map_lst {text-align: center;}
+.drk_sitemap .map_cont .map_lst:after{content:'';display: block;clear: both;}
+.drk_sitemap .map_cont .map_lst dl {float: left; width: 25%;/*padding-bottom: 50px;*/ padding-bottom: 130px;}
+.drk_sitemap .map_cont .map_lst dl dt {margin-bottom: 70px;padding: 30px 0; border-top: 2px solid #4d4d4d; border-bottom: 1px solid #ddd;font-size: 21px; line-height: 1; letter-spacing: -1px;}
+.drk_sitemap .map_cont .map_lst dl dd {margin-bottom: 30px;line-height: 1;}
+.drk_sitemap .map_cont .map_lst dl dd a {font-size: 16px; letter-spacing: -1px;}
+.drk_sitemap .map_cont .map_lst dl dd a:hover {text-decoration: underline;}
+.drk_sitemap .map_cont .area_nt {padding: 20px 0;border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;box-sizing: border-box;}
+.drk_sitemap .map_cont .area_nt a {position: relative; padding:0 20px; font-size: 16px; line-height: 1; letter-spacing: -1px;}
+.drk_sitemap .map_cont .area_nt a:before,.drk_sitemap .map_cont .area_nt a:after {position: absolute; top: 0; content:'';}
+.drk_sitemap .map_cont .area_nt a.notic {left: 0; background: url('https://cwstatic.asiae.co.kr/drinkeat/sitemap/ico_notice.png') no-repeat;}
+.drk_sitemap .map_cont .area_nt a.notic:after/*,.drk_sitemap .map_cont .area_nt a.event:after */{right: 8px; display: block; width: 1px; height: 100%; background: #ddd;}
+.drk_sitemap .map_cont .area_nt a.event {left:0;background: url('https://cwstatic.asiae.co.kr/drinkeat/sitemap/ico_event.png') no-repeat;}
+.drk_sitemap .map_cont .area_nt a.commu {left:0;background: url('https://cwstatic.asiae.co.kr/drinkeat/sitemap/ico_commu.png') no-repeat;}
+
+@media only screen and (max-width:1040px) {
+    .drk_sitemap .map_cont {width: 100%;}
+}
+@media only screen and (max-width:768px) {
+    .drk_sitemap .map_head .title {font-size: 30px;}
+    .drk_sitemap .map_head .title:after {}
+}
+@media only screen and (max-width:639px){
+    .drk_sitemap .map_head .title {float: none; margin-bottom: 10px; font-size: 25px; font-family: 'notokrM';}
+    .drk_sitemap .map_head .title:after {display: none;}
+    .drk_sitemap .map_head p {margin: 10px 0 0 0; font-size: 17px;}
+    .drk_sitemap .map_cont .map_lst dl {padding-bottom: 45px;width: 50%;}
+    .drk_sitemap .map_cont .area_nt {text-align: center;}
+}
+@media only screen and (max-width:425px){
+    .drk_sitemap {padding: 40px 0 50px;}
+    .drk_sitemap .map_head{margin-bottom: 20px;}
+    .drk_sitemap .map_head .title {font-size: 21px;}
+    .drk_sitemap .map_head p {font-size: 15px;}
+    .drk_sitemap .map_cont .map_lst dl dt {padding: 20px 0;margin-bottom: 45px;}
+    .drk_sitemap .map_cont .area_nt a.commu {padding-right: 0;}
+    .drk_sitemap .map_cont .area_nt a {padding: 0 15px 0 20px; font-size: 13px; }
+    .drk_sitemap .map_cont .area_nt a.notic {background-size: 13px;}
+    .drk_sitemap .map_cont .area_nt a.event {background-size: 14px;}
+    .drk_sitemap .map_cont .area_nt a.commu {background-size: 14px;}
+    .drk_sitemap .map_cont .area_nt a.notic:after/*, .drk_sitemap .map_cont .area_nt a.event:after*/
+    {right: 4px;}
+}
+
+
+
+

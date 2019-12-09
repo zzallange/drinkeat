@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+.container {position: relative; width: 100%; margin-top: 60px;}
+
+.drk_footer .drk_fttop {display: none;}
+.drk_footer .drk_fttop .notice {display: none;}
+.drk_footer .drk_fttop .event {display: none;} 
+
+.adjoin_wrap {padding: 80px 0 100px;}
+.adjoin_wrap .ad_head {margin-bottom: 100px;}
+.adjoin_wrap .ad_head:after {content: ''; display: block; clear: both;}
+.adjoin_wrap .ad_head .title {float: left;position: relative; font-size: 33px; line-height: 1; letter-spacing: -3px; text-align: left; font-family: 'notorkL';} 
+.adjoin_wrap .ad_head .title:after {content: '';display: block; position: absolute;top: 2px;right: -20px; width: 2px; height: 95%;background: #111;}
+.adjoin_wrap .ad_head > p {float: left;margin:13px 0 0 35px;font-size: 21px; line-height: 1; letter-spacing: -2px; color: #595959;} 
+
+.adjoin_wrap .ad_cont {width: 100%;}
+.adjoin_wrap .ad_cont h3,.adjoin_wrap .ad_cont > p {text-align: center;line-height: 1;letter-spacing: -1px;}
+.adjoin_wrap .ad_cont h3 {margin-bottom: 20px;font-size: 35px;font-family:'notokrM';}
+.adjoin_wrap .ad_cont h3 strong {font-weight: normal;color: #ff695c;letter-spacing: -4px;}
+.adjoin_wrap .ad_cont > p {font-size: 17px; color: #111;}
+
+.ad_cont .ad_inbox {margin-top: 50px;width: 1000px;}
+.ad_cont .ad_inbox:after {content:''; display: block; clear: both;}
+.ad_cont .ad_inbox .ad_thumb {float: left; width: 615px;}
+.ad_cont .ad_inbox .m_img {display: none;}
+.ad_cont .ad_inbox .ad_text {float: left; padding:20px 0 0 25px; width: 315px;font-size: 17px; letter-spacing: -2px; line-height: 30px; color: #595959;}
+.ad_cont .ad_inbox .ad_text .email {margin: 20px 0 40px;font-size: 16px; line-height: 1; color: #111;letter-spacing: -1px;}
+.ad_cont .ad_inbox .ad_text .email a {color: #09b8a9;letter-spacing: 0px;}
+.ad_cont .ad_inbox .ad_text .email a:hover {text-decoration: underline;}
+.ad_cont .ad_inbox .ad_text .download {padding: 5px 40px 5px 35px; border: 1px solid #ff695c; border-radius: 50px; }
+.ad_cont .ad_inbox .ad_text .download span {position: relative; padding-right: 10px; font-size: 15px; line-height: 1; color: #ff695c;}
+.ad_cont .ad_inbox .ad_text .download span:after {position: absolute; top:.5px; right: -15px; content:''; width:15px; height: 15px; background: url('https://cwstatic.asiae.co.kr/drinkeat/adjoin/ico_download.png') no-repeat; background-size: 100%;}
+
+
+@media only screen and (max-width:1040px) {
+    adjoin_wrap {padding: 70px 0; }
+    .ad_cont .ad_inbox {width: 100%;}
+    .ad_cont .ad_inbox .ad_thumb {width: 65%;}
+    .ad_cont .ad_inbox .ad_text {width: 34%;}
+    .ad_cont .ad_inbox .ad_text {padding: 20px 0 0 1%;line-height: 28px;}
+    .ad_cont .ad_inbox .ad_text .email {margin: 20px 0 35px;}
+}
+@media only screen and (max-width:810px){
+    .ad_cont .ad_inbox .ad_thumb {width: 61%;}
+    .ad_cont .ad_inbox .ad_text {width: 37%;}
+}
+@media only screen and (max-width:768px) {
+    .adjoin_wrap .ad_head .title {font-size: 30px;}
+    .adjoin_wrap .ad_cont h3 {font-size: 31px;}
+    .adjoin_wrap .ad_head{margin-bottom: 80px;}
+    .adjoin_wrap .ad_head > p {margin: 12px 0 0 35px; font-size: 19px;}
+    
+    .ad_cont .ad_inbox .ad_thumb {width: 60%;}
+    .ad_cont .ad_inbox .ad_text {padding: 7px 0 0 15px;width: 37%;font-size: 16px;line-height: 26px;}
+    .ad_cont .ad_inbox .ad_text .email{margin: 20px 0 25px;font-size: 15px; line-height: 1.6;}
+    .ad_cont .ad_inbox .ad_text .download {padding: 3px 30px 3px 25px;}
+    .ad_cont .ad_inbox .ad_text .download span {font-size: 14px;}
+    .ad_cont .ad_inbox .ad_text .download span:after {top: 1px; right: -12px; width: 14px;height: 14px;}
+}
+@media only screen and (max-width:639px){
+    .adjoin_wrap {padding: 50px 0 50px;}
+    .adjoin_wrap .ad_head{margin-bottom: 50px;}
+    .adjoin_wrap .ad_head .title {float: none; margin-bottom: 10px;font-size: 25px; font-family: 'notokrM';}
+    .adjoin_wrap .ad_head .title:after {display: none;}
+    .adjoin_wrap .ad_head > p {margin: 0;font-size: 17px;}
+    .adjoin_wrap .ad_cont h3 {font-size: 23px;}
+    .adjoin_wrap .ad_cont > p {margin: 0 auto; width: 65%; font-size: 15px; line-height: 25px;}
+    
+    .ad_cont .ad_inbox {margin-top: 25px;}
+    .ad_cont .ad_inbox .pc_img {display: none;}
+    .ad_cont .ad_inbox .m_img {display: block; width: 100%;}
+    .ad_cont .ad_inbox .ad_text {padding: 0;width: 100%;text-align: center;font-size: 15px;}
+    .ad_cont .ad_inbox .ad_text > p {margin: 0 auto; width: 85%;padding: 35px 0 30px;}
+    .ad_cont .ad_inbox .ad_text .email {margin: 0 0 30px;font-size: 15px;}
+    .ad_cont .ad_inbox .ad_text .email a {text-decoration: underline;}
+}
+@media only screen and (max-width:425px){
+    .adjoin_wrap .ad_head .title {font-size: 21px;}
+    .adjoin_wrap .ad_head > p {font-size: 15px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
