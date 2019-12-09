@@ -47,6 +47,7 @@ table {border:0 none; border-collapse:collapse; border-spacing:0; vertical-align
 legend {font-size: 0; line-height: 0; color: transparent;}
 
 /* 대체텍스트 숨김 */
+.skip {font-size: 0; line-height: 0; color: transparent;width: 0;height: 0;}
 .ir {font-size: 0; line-height: 0; color: transparent;  }
 
 /* 레이아웃 기초설정 */
