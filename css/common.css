@@ -2,8 +2,8 @@
 
 /* 여백 초기화 */
 body,html {margin: 0; padding: 0; position: relative; width: 100%; font-family:HelveticaNeue-Light,AppleSDGothicNeo-Light,'Noto Sans','Roboto-Light','Malgun Gothic','맑은 고딕',Dotum,'돋움',sans-serif; color:#111;}
-body::-webkit-scrollbar {display:none;}
-body{-ms-overflow-style: none;}
+/*body::-webkit-scrollbar {display:none;}
+body{-ms-overflow-style: none;}*/
 div,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,form,fieldset,textarea,input,legend,table,th,td,button,figure,span {margin: 0; padding: 0;}
 
 /* 제목요소 */
@@ -185,7 +185,7 @@ legend {font-size: 0; line-height: 0; color: transparent;}
 
 /* scribe */
 .drk_scribe {height:380px; background: url('https://cwstatic.asiae.co.kr/drinkeat/footer_bg02.jpg') top center no-repeat; opacity: .9;}
-.drk_scribe .tit {padding: 100px 0 20px;text-align: center; font-size: 30px; color: #fff; letter-spacing: -1px;font-family: 'NanumMyR';}
+.drk_scribe .tit {padding: 85px 0 20px;text-align: center; font-size: 30px; line-height: 40px; color: #fff; letter-spacing: -1px;font-family: 'NanumMyR';}
 .drk_scribe .text {display: block;text-align: center; font-size: 17px; color: #fff; letter-spacing: -1px;}
 .drk_scribe .subsc_wrap {margin: 50px auto 0; width: 200px; }
 .drk_scribe .subsc_wrap .btn_subsc {margin: 0 auto; width: 200px; height: 60px; line-height: 60px; text-align: center; font-size: 19px; font-weight: 600; letter-spacing: -1px; vertical-align: top; background:#ff695c; color: #fff; transition: all .2s ease-in-out;}
@@ -210,9 +210,9 @@ legend {font-size: 0; line-height: 0; color: transparent;}
 .drk_footer .drk_ftbtom .fm_site .btn_fms {padding: 0 30px;line-height: 65px;box-sizing: border-box;}
 .drk_footer .drk_ftbtom .fm_site .btn_fms .ico {margin-left: 5px; width: 13px; height: 7px; vertical-align: middle; background: url('https://cwstatic.asiae.co.kr/asiae_v2/common/icon_arr_c.png') no-repeat; background-position: 0 0;}
 .drk_footer .drk_ftbtom .fm_site .btn_fms .ico.active {margin:0 0 3px 5px; width: 13px; height: 7px; vertical-align: middle; background: url('https://cwstatic.asiae.co.kr/asiae_v2/common/icon_arr_c.png') no-repeat; background-position: 0 -9px;}
-.drk_footer .drk_ftbtom .in_site {display: none; position: absolute; left: -1px; top: 65px; text-align: center;z-index: 10;}
+.drk_footer .drk_ftbtom .in_site {display: none; position: absolute; left: -1px; top: 60px; text-align: center;z-index: 10;}
 .drk_footer .drk_ftbtom .in_site.on {display: block;}
-.drk_footer .drk_ftbtom .in_site .site {margin-bottom: -1px;padding: 15px 30px; box-sizing: border-box; width: 101%; border: 1px solid #ddd;background: #fff;}
+.drk_footer .drk_ftbtom .in_site .site {margin-bottom: -1px;padding: 0 30px; line-height: 50px; box-sizing: border-box; width: 101%; border: 1px solid #ddd;background: #fff;}
 .drk_footer .drk_ftbtom .in_site .site:hover {background: #f5f5f5;}
 .drk_footer .ft_area {padding: 30px 0 35px; border-top: 1px solid #ddd; font-size: 13px; line-height: 24px; letter-spacing: -1px; color: #595959;}
 .drk_footer .ft_area .info_t p {width: 80%;}
@@ -302,6 +302,9 @@ html.full_html02 a.btn_top {z-index:30;}
     .drk_footer .drk_ftbtom ul {margin: 20px 0 20px 5px; width: 60%;}
     .drk_footer .drk_ftbtom ul li a {line-height: 30px; font-size: 12px;}
     .drk_footer .drk_ftbtom .fm_site {margin-top: 20px;}
+    .drk_footer .drk_ftbtom .fm_site .btn_fms {margin: 0; line-height: 58px;}
+    .drk_footer .drk_ftbtom .in_site .site {line-height: 56px;}
+    .drk_footer .drk_ftbtom .in_site {top: 58px;}
 }
 
 @media only screen and (max-width:768px){
@@ -314,7 +317,7 @@ html.full_html02 a.btn_top {z-index:30;}
     .drk_header .btn_allmenu {margin:3px 0 0 10px;}
     .drk_header .dkt_logo {margin-top: 0; margin-left: 0; position: absolute; top: 18px; left: 50%; transform: translateX(-50%); -webkit-transform: translateX(-50%);}
     .drk_header .drk_gnb {display: none;}
-    .drk_header .btn_search {top: 7px; right: 2%; width: 50px; height: 50px; }
+    .drk_header .btn_search {top: 6px; right: 2%; width: 50px; height: 50px; }
     .drk_header .btn_search .ico {float: right;margin-left: 5px;}
     /* 햄버거 메뉴 클릭시 보이는 전체메뉴 */
     .drk_header .visual_menu_open {width: 100%;overflow: scroll;}
@@ -348,7 +351,7 @@ html.full_html02 a.btn_top {z-index:30;}
     .drk_sns ul li a:hover .sns_ico {background: none;}
     /* 드링킷 구독하기 */
     .drk_scribe {padding-bottom: 20px;height: 265px;}
-    .drk_scribe .tit {padding: 50px 50px 15px;font-size: 20px; line-height:30px }
+    .drk_scribe .tit {padding: 50px 0px 15px;font-size: 20px; line-height:30px }
     .drk_scribe .text {color: #ccc; font-size: 13px;padding: 0 75px;}
     .drk_scribe .subsc_wrap .btn_subsc {font-size: 15px; font-weight: 600; letter-spacing: -1px;height: 45px;line-height: 45px;}
     /* footer */
@@ -357,10 +360,12 @@ html.full_html02 a.btn_top {z-index:30;}
     .drk_footer .drk_fttop .notice,.drk_footer .drk_fttop .event { width: 100%; text-align: left; }
     .drk_footer .drk_fttop .event {margin-top: 10px;}
     .drk_footer .drk_ftbtom ul li a {line-height: 30px;font-size: 12px;}
-    .drk_footer .drk_ftbtom .fm_site {margin-top: 30px;}
-    .drk_footer .drk_ftbtom .fm_site .btn_fms {padding: 0 15px;line-height: 40px;}
-    .drk_footer .drk_ftbtom .in_site {top: 40px;}
-    .drk_footer .drk_ftbtom .in_site .site {padding: 15%;}
+    .drk_footer .drk_ftbtom .fm_site {margin-top: 25px;}
+    .drk_footer .drk_ftbtom .fm_site .btn_fms {padding: 0 15px;line-height: 48px;}
+    .drk_footer .drk_ftbtom .in_site {top: 48px;}
+    .drk_footer .drk_ftbtom .in_site .site {padding: 0 15px; line-height: 46px;}
+    .drk_footer .drk_ftbtom .fm_site .btn_fms .ico {margin: 2px 0 0 5px;background-size: 80%;}
+    .drk_footer .drk_ftbtom .fm_site .btn_fms .ico.active {margin: 0 0 2px 5px;background-position: 0 -7px; background-size: 80%;}
     /* paging_comn */
     .paging_comm {margin-top: 35px;}
 }
@@ -432,9 +437,12 @@ html.full_html02 a.btn_top {z-index:30;}
 
 @media only screen and (max-width:375px){
     .drk_sns .drk_inner div div {display: none;}
+    .drk_footer .drk_fttop .notice .title, .drk_footer .drk_fttop .event .title {height: 35px; line-height: 33px;}
+    .drk_footer .drk_fttop .notice,.drk_footer .drk_fttop .event {line-height: 45px;}
     /* footer */
     .drk_footer .drk_ftbtom .ft_inbox ul {width: 58%;}
     .drk_footer .drk_ftbtom .fm_site .btn_fms {padding: 0 13px;}
+    .drk_footer .drk_ftbtom .in_site .site {padding: 0 13px;}
     /* paging_comn */
     .paging_comm .btn_paging {width: 35px;height: 35px;}
     .paging_comm .btn_prev .ico_corp, .paging_comm .btn_next .ico_corp {margin-top: 8px;}
@@ -449,5 +457,7 @@ html.full_html02 a.btn_top {z-index:30;}
     .drk_scribe {padding-bottom: 0; height: 260px;}
     .drk_scribe .tit {padding: 40px 20px 10px;}
     .drk_scribe .text {padding: 0 30px;}
+    
+    .drk_footer .drk_fttop .notice .title, .drk_footer .drk_fttop .event .title {width: 28%;}
+    .drk_footer .drk_fttop .notice .text, .drk_footer .drk_fttop .event .text {margin: 0 0 0 7px;}
 }
-
