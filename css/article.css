@@ -82,13 +82,14 @@
 /* 이전글, 다음글 */
 .more_aticle {margin: 0 auto ; max-width: 700px; width: 70%; overflow: hidden}
 .more_aticle:after {content: ''; display: block; padding-bottom: 1px;clear: both;}
-.more_aticle .at_info {padding-bottom: 40px;border-bottom: 1px dashed #ddd;margin-bottom: 40px;}
+.more_aticle .at_info {/*padding-bottom: 40px;border-bottom: 1px dashed #ddd;*/margin-bottom: 40px;}
  .more_aticle .at_info:after {content: '';display: block;clear: both;}
  .more_aticle .at_info .keyword {margin-top: 5px;}
 .more_aticle .at_info .keyword:after {content: '';display: block;clear: both;}
  .more_aticle .at_info .keyword li {float: left; margin-right: 10px;}
  .more_aticle .at_info .keyword li a {font-size: 14px; line-height: 20px; color: #018075;letter-spacing: -1px;}
-.more_aticle .at_info .comment {margin-top: 15px;}
+/* 2019.12.10 라이브리 영역 히든처리 */
+.more_aticle .at_info .comment {display: none; margin-top: 15px;}
  .more_aticle .at_info .comment .btn_cmt {position: relative; padding-left: 20px; width: 100px; height: 35px; line-height: 35px; border: 1px solid #ddd; border-radius: 35px; box-sizing: border-box; font-size: 15px; text-align: center; letter-spacing: -1px; color: #018075;}
  .more_aticle .at_info .comment .btn_cmt:before {position: absolute; left: 22px; top:7px; content: ''; width: 20px; height: 20px; }
  .more_aticle .at_info .comment .talk:before {background: url('https://cwstatic.asiae.co.kr/drinkeat/comment.png') no-repeat;}
@@ -112,9 +113,15 @@
  .more_aticle .at_inmore .preview p, .more_aticle .at_inmore .next p {margin:8px 0 0 0; font-family: 'NanumMyB','NanumMyeongjo'; font-size: 19px;line-height: 25px;letter-spacing: -1px; color: #111; width: 90%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
  .more_aticle .at_inmore .next p {float: right;}
  .more_aticle .at_inmore .preview:hover p, .more_aticle .at_inmore .next:hover p { color: #000;}
+/* 2019.12.10 이전글 다음글이 없을때 클래스 추가 */
+.more_aticle .at_inmore .no_ct:hover {border-color:#ddd}
+.more_aticle .at_inmore .no_ct:hover .arr_prev{background: url('https://cwstatic.asiae.co.kr/drinkeat/article/article_arrl.png') no-repeat;} 
+.more_aticle .at_inmore .no_ct:hover .arr_next {background: url('https://cwstatic.asiae.co.kr/drinkeat/article/article_arrR.png') no-repeat;}
+/* //2019.12.10 */
 
 /* 라이브리 */
-.livere {margin: 0 auto 70px; padding: 0 20px; max-width:  700px;overflow: hidden;}
+/* 2019.12.10 라이브리 영역 히든처리 */
+.livere {display: none;margin: 0 auto 70px; padding: 0 20px; max-width:  700px;overflow: hidden;}
 
 /* 이 콘텐츠는 어때요? */
 .cons_wrap {position: relative; width: 1000px; margin: 0 auto;}
@@ -292,7 +299,9 @@
     
     .drk_article .at_head .at_title .user_views {margin-top: 30px;}
     .drk_article .at_cont { width: 100%; box-sizing: border-box;}
-    .at_cont p {}
+    /* 2019.12.10 넓은간격 조정 */
+    .at_cont p:first-child {margin-top: 0;}
+    /* //2019.12.10 넓은간격 조정 */
     .at_cont .qeout_box {margin-top: 50px;}
     .at_cont .qeout_box .icon_qeout {width: 20px;}
     .at_cont .qeout_box p {margin: 20px 0;}
@@ -312,7 +321,10 @@
     .more_aticle .at_inmore .preview:hover .arr_prev {background: url('https://cwstatic.asiae.co.kr/drinkeat/on_marticle_arrl.png') no-repeat;}
     .more_aticle .at_inmore .next .arr_next {width: 10px; right: 20px; background: url('https://cwstatic.asiae.co.kr/drinkeat/article_arrR01.png') no-repeat;}
     .more_aticle .at_inmore .next:hover .arr_next {width: 10px; right: 20px; background: url('https://cwstatic.asiae.co.kr/drinkeat/on_marticle_arrR.png') no-repeat;}
-    
+    /* 이전글 다음글이 없을때 */
+    .more_aticle .at_inmore .no_ct:hover .arr_prev {width: 10px;left: 20px;background: url('https://cwstatic.asiae.co.kr/drinkeat/marticle_arrl.png') no-repeat;}
+    .more_aticle .at_inmore .no_ct:hover .arr_next {width: 10px; right: 20px; background: url('https://cwstatic.asiae.co.kr/drinkeat/article_arrR01.png') no-repeat;}
+    /* //이전글 다음글이 없을때 */
     .more_aticle .at_inmore .next {padding-right: 0;}
     .more_aticle .at_inmore .preview p, .more_aticle .at_inmore .next p {margin-top: 5px;}
     
@@ -336,12 +348,3 @@
     .drk_article .at_head .at_title h2 {width: 100%;}
     .more_aticle .at_intit .naming p {margin-bottom: 10px;}
 }
-
-
-
-
-
-
-
-
-
