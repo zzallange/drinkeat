@@ -139,8 +139,8 @@
 .drk_banner .ban_list .banner .thumb {float: left; max-width: 490px; width: 49%;}
 .drk_banner .ban_list .banner .thumb .pc {display: block;font-size: 0;}
 .drk_banner .ban_list .banner .thumb .mo {display: none;}
-.drk_banner .ban_list .banner .text {float: left; padding: 30px 0 30px 50px; width: 51%; height: 100%; box-sizing: border-box; -webkit-box-sizing:border-box; background: #fff;}
-.drk_banner .ban_list .banner .text > p {margin-bottom: 20px;font-size: 23px;line-height: 25px;letter-spacing: -2px;}
+.drk_banner .ban_list .banner .text {float: left; padding: 30px 30px 30px 50px; width: 51%; height: 100%; box-sizing: border-box; -webkit-box-sizing:border-box; background: #fff;}
+.drk_banner .ban_list .banner .text > p {margin-bottom: 20px;font-size: 23px;line-height: 25px;letter-spacing: -2px; text-overflow: ellipsis; white-space: nowrap;overflow: hidden;}
 .drk_banner .ban_list .banner .text > em {display: block;font-size: 16px; letter-spacing: -2px; line-height: 20px; color: #595959;}
 .drk_banner .ban_list .banner .text > em > span {letter-spacing: 0;padding-left: 15px;position: relative;}
 .drk_banner .ban_list .banner .text > em > span:before {content: '';display: block; position: absolute; left: 6px;; top: 3px; width: 1px; height: 70%; background: #ddd;}
@@ -360,7 +360,7 @@
     .drktemplate #playerid {width:100%; height:100%; min-height:234px; vertical-align:top;}
     .drkcont_list {padding:13px 0 15px 0;}
     .photo_cont {position:relative; overflow:hidden; padding:13px 0 20px 20px;}
-    .photo_news .photo_slide .photo_list > div {position: relative; float:left; width:auto; padding-left:5px; webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin-right:5px; display: -webkit-box;display: -ms-flexbox; display: -webkit-flex;display: flex;-webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center;-ms-flex-align: center;-webkit-align-items: center; align-items:center;}
+    .photo_news .photo_slide .photo_list > div {position: relative; float:left; width:auto; padding-left:5px; -webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin-right:5px; display: -webkit-box;display: -ms-flexbox; display: -webkit-flex;display: flex;-webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center;-ms-flex-align: center;-webkit-align-items: center; align-items:center;}
     .photo_news .photo_slide .photo_list > div:first-child {padding-left:0;}
     .photo_news .photo_slide .photo_list > div .more_ico {position: absolute; right:5%; top: 207px; width: 23px;}    
     .photo_news .photo_slide .photo_list > div .list {display:block; position:relative; width:284px; vertical-align:top;}
@@ -475,29 +475,3 @@
     .content .dk_mad .drk_inner {padding: 0;}
     .drk_banner {padding: 45px 0;}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
