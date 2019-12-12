@@ -23,31 +23,11 @@
 
 <link rel="stylesheet" type="text/css" href="https://cwcode.asiae.co.kr/asiae_v2/font/font.css"/>
 <link rel="stylesheet" type="text/css" href="css/common.css">
-<link rel="stylesheet" type="text/css" href="css/search.css">
+<link rel="stylesheet" type="text/css" href="css/sitemap.css">
 
 <script type="text/javascript" src="https://view.asiae.co.kr/js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
 <title>Drinkeat</title>  
-<script type="text/javascript">
-    $(document).ready(function(){
-        
-
-    // Tab 메뉴 클릭 이벤트 생성
-        $('.lst_tab li').click(function(){
-            $(this).children('a').toggleClass('on');
-            $(this).siblings().find('a').removeClass('on');
-        });
-        $('.tabmu01').click(function(){
-            $('#lst_tabcon01').css({display:'block'});    
-            $('#lst_tabcon02').css({display:'none'});    
-        });
-        $('.tabmu02').click(function(){
-            $('#lst_tabcon02').css({display:'block'});    
-            $('#lst_tabcon01').css({display:'none'});    
-        });    
-        
-});
-</script>  
     
 </head>
     <body>
@@ -96,7 +76,7 @@
                             <a href="#none">알콜앤칩스</a>
                         </div>
                         <!-- //nav04 -->
-                    </div> 
+                    </div>  
                     <div class="visu_inbox">
                         <h3 class="tit">드링킷을 더 편하게 만나세요!</h3>
                         <ul class="sns_bx">
@@ -147,416 +127,109 @@
             <!-- container -->
             <div id="container" class="container">
                 <!-- content -->   
-                <div class="content">
-                    <!-- drk_inner -->   
-                    <div class="drk_inner sch_o">
-                        <!-- input -->   
-                        <div class="visual_search">
-                            <div class="visu_serch">
-                                <!-- 입력창 -->   
-                                <form class="serch_input">
-                                    <input type="text" name="drkSearch" id="drkSearch" class="inserch" placeholder="검색어를 입력해주세요">
-                                    <a href="#none" class="x_icon">
-                                        <span><img src="https://cwstatic.asiae.co.kr/drinkeat/serch_x.png" alt="닫기 버튼"></span>
-                                    </a>
-                                    <a href="#none" class="inbtn_search">
-                                        <span><img src="https://cwstatic.asiae.co.kr/drinkeat/m_sch.png" alt="검색하기 버튼"></span>
-                                    </a>
-                                </form>
-                                <!-- //입력창 -->
-                            </div>
+                <div class="content">    
+                    <div class="drk_inner">
+                        <div class="drk_sitemap">
+                            <!-- title -->   
+                            <div class="map_head">
+                                <h2 class="title">사이트맵</h2>
+                                <p>드링킷 사이트맵</p>
+                            </div>    
+                            <!-- //title -->
+                            <!-- 2019.12.12 변경 -->
+                            <!-- sitemapCont -->
+                            <div class="map_cont">
+                                <div class="subtit">
+                                    <h3>전체 기사 보기</h3>
+                                </div>
+                                <!-- 기사 날짜별 -->   
+                                <div class="article_year">
+                                    <dl>
+                                        <dt class="year">2019</dt>
+                                        <dd class="month">
+                                            <ul>
+                                                <li><a href="./sitemap_01.html">11월</a></li>
+                                                <li><a href="./sitemap_01.html">12월</a></li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                    <dl class="y_last">
+                                        <dt class="year">2020</dt>
+                                        <dd class="month">
+                                            <ul>
+                                                <li><a href="#none">1월</a></li>
+                                                <li><a href="#none">2월</a></li>
+                                                <li><a href="#none">3월</a></li>
+                                                <li><a href="#none">4월</a></li>
+                                                <li><a href="#none">5월</a></li>
+                                                <li><a href="#none">6월</a></li>
+                                                <li><a href="#none">7월</a></li>
+                                                <li><a href="#none">8월</a></li>
+                                                <li><a href="#none">9월</a></li>
+                                                <li><a href="#none">10월</a></li>
+                                                <li><a href="#none">11월</a></li>
+                                                <li><a href="#none">12월</a></li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <!-- 기사 날짜별 --> 
+                                <div class="sitemap">
+                                    <dl class="eat">
+                                        <dt>
+                                            <a href="#none">
+                                            <span class="ir"><img src="https://cwstatic.asiae.co.kr/drinkeat/sitemap/ico_eat.png" alt="Eat">아이콘</span>Eat
+                                            </a>
+                                        </dt>
+                                        <dd><a href="#none">찰떡궁합레시피</a></dd>
+                                        <dd><a href="#none">힙플레이스</a></dd>
+                                        <dd><a href="#none">알콜앤칩스</a></dd>
+                                    </dl>
+                                    <dl class="drink">
+                                        <dt>
+                                            <a href="#none">
+                                            <span class="ir"><img src="https://cwstatic.asiae.co.kr/drinkeat/sitemap/ico_drk.png" alt="Drink">아이콘</span>Drink
+                                            </a>
+                                        </dt>
+                                        <dd><a href="#none">술키피디아</a></dd>
+                                        <dd><a href="#none">술찍한리뷰</a></dd>
+                                        <dd><a href="#none">주조본능</a></dd>
+                                        <dd><a href="#none">주류탐방</a></dd>
+                                    </dl>
+                                    <dl class="enjoy">
+                                        <dt>
+                                            <a href="#none">
+                                            <span class="ir"><img src="https://cwstatic.asiae.co.kr/drinkeat/sitemap/ico_ej.png" alt="Drink">아이콘</span>Enjoy
+                                            </a>
+                                        </dt>
+                                        <dd><a href="#none">술기로운생활</a></dd>
+                                        <dd><a href="#none">드링킷컬처</a></dd>
+                                        <dd><a href="#none">드링킷딜</a></dd>
+                                    </dl>
+                                    <dl class="well">
+                                        <dt>
+                                            <a href="#none">
+                                            <span class="ir"><img src="https://cwstatic.asiae.co.kr/drinkeat/sitemap/ico_wel.png" alt="Drink">아이콘</span>Well-life
+                                            </a>
+                                        </dt>
+                                        <dd><a href="#none">잘먹고노는법</a></dd>
+                                    </dl>
+                                </div>
+                                <!-- 공지사항 -->
+                            <!-- //2019.12.12 변경 -->
+                                <div class="area_nt">
+                                    <a href="#none" class="notic">공지사항</a>
+                                    <a href="#none" class="event">이벤트/행사</a>
+                                </div>
+                                <!-- //공지사항 -->
+                            </div> 
+                            <!-- //sitemapCont -->
                         </div>
-                        <!-- //input -->
-                        <!-- visual_content -->
-                        <div class="visual_ct"> 
-                            <h2 class="result_num">검색결과 152건</h2>
-                            <div class="lst_tab">
-                                <ul>
-                                    <li><a href="#none" class="tabmu01 on">정확도</a></li>
-                                    <li><a href="#none" class="tabmu02">최신</a></li>
-                                </ul>
-                            </div>
-                            <!-- 정확도 list -->
-                            <div id="lst_tabcon01" class="lst_tabcon">
-                                <ul> 
-                                    <li>
-                                        <a href="#none" class="thumb">
-                                           <span><img src="https://cwcontent.asiae.co.kr/asiaresize/129/2019090508254249606_1567639542.jpg" alt="list01이미지"></span>
-                                        </a> 
-                                        <div class="text_box">
-                                            <a href="#none">
-                                                <h3 class="headline">"선택장애는 끝"<span>한줄처리</span>부탁드립니다.부탁드립니다.부탁드립니다.</h3>
-                                                <p>와인바에 들어가서 안주를 뭐로할지 고민될때 그날의 상태와 취향에따라 선택하자.</p>
-                                            </a>
-                                            <em class="date">
-                                            <!--<span>13,528회</span>-->
-                                            <span class="update">2019.11.11</span>
-                                            <span>by조이</span>
-                                            </em>
-                                        </div> 
-                                    </li>
-                                    <li>
-                                        <a href="#none" class="thumb">
-                                           <span><img src="https://cwcontent.asiae.co.kr/asiaresize/129/2019071208404440522_1562888444.jpg" alt="list02이미지"></span>
-                                        </a> 
-                                        <div class="text_box">
-                                            <a href="#none">
-                                                <h3 class="headline">"선택장애는 끝"<span>맥주</span>부탁드립니다.부탁드립니다.부탁드립니다.</h3>
-                                                <p>와인바에 들어가서 안주를 뭐로할지 고민될때 그날의 상태와 취향에따라 선택하자.</p>
-                                            </a>
-                                            <em class="date">
-                                            <!--<span>13,528회</span>-->
-                                            <span class="update">2019.11.11</span>
-                                            <span>by조이</span>
-                                            </em>
-                                        </div> 
-                                    </li>
-                                    <li>
-                                        <a href="#none" class="thumb">
-                                           <span><img src="https://cwcontent.asiae.co.kr/asiaresize/129/2018020412290591928_1517714944.jpg" alt="list03이미지"></span>
-                                        </a> 
-                                        <div class="text_box">
-                                            <a href="#none">
-                                                <h3 class="headline">"선택장애는 끝"<span>맥주</span>바 안주선택 가이드</h3>
-                                                <p>와인바에 들어가서 안주를 뭐로할지 고민될때 그날의 상태와 취향에따라 선택하자.</p>
-                                            </a>
-                                            <em class="date">
-                                            <!--<span>13,528회</span>-->
-                                            <span class="update">2019.11.11</span>
-                                            <span>by조이</span>
-                                            </em>
-                                        </div> 
-                                    </li>
-                                    <li>
-                                        <a href="#none" class="thumb">
-                                           <span><img src="https://cwcontent.asiae.co.kr/asiaresize/129/201706141137369387260A_1.jpg" alt="list04이미지"></span>
-                                        </a> 
-                                        <div class="text_box">
-                                            <a href="#none">
-                                                <h3 class="headline">"선택장애는 끝"<span>맥주</span>바 안주선택 가이드</h3>
-                                                <p>와인바에 들어가서 안주를 뭐로할지 고민될때 그날의 상태와 취향에따라 선택하자.</p>
-                                            </a>
-                                            <em class="date">
-                                            <!--<span>13,528회</span>-->
-                                            <span class="update">2019.11.11</span>
-                                            <span>by조이</span>
-                                            </em>
-                                        </div> 
-                                    </li>
-                                    <li>
-                                        <a href="#none" class="thumb">
-                                           <span><img src="https://cwcontent.asiae.co.kr/asiaresize/129/2019071208404440522_1562888444.jpg" alt="list05이미지"></span>
-                                        </a> 
-                                        <div class="text_box">
-                                            <a href="#none">
-                                                <h3 class="headline">"선택장애는 끝"<span>맥주</span>부탁드립니다.부탁드립니다.부탁드립니다.</h3>
-                                                <p>와인바에 들어가서 안주를 뭐로할지 고민될때 그날의 상태와 취향에따라 선택하자.</p>
-                                            </a>
-                                            <em class="date">
-                                            <!--<span>13,528회</span>-->
-                                            <span class="update">2019.11.11</span>
-                                            <span>by조이</span>
-                                            </em>
-                                        </div> 
-                                    </li>
-                                    <li>
-                                        <a href="#none" class="thumb">
-                                           <span><img src="https://cwcontent.asiae.co.kr/asiaresize/129/201310112224162205285A_1.jpg" alt="list06이미지"></span>
-                                        </a> 
-                                        <div class="text_box">
-                                            <a href="#none">
-                                                <h3 class="headline">"선택장애는 끝"<span>맥주</span>부탁드립니다.부탁드립니다.부탁드립니다.</h3>
-                                                <p>와인바에 들어가서 안주를 뭐로할지 고민될때 그날의 상태와 취향에따라 선택하자.</p>
-                                            </a>
-                                            <em class="date">
-                                            <!--<span>13,528회</span>-->
-                                            <span class="update">2019.11.11</span>
-                                            <span>by조이</span>
-                                            </em>
-                                        </div> 
-                                    </li>
-                                    <li>
-                                        <a href="#none" class="thumb">
-                                           <span><img src="https://cwcontent.asiae.co.kr/asiaresize/129/201302221458389681786A_1.jpg" alt="list07이미지"></span>
-                                        </a> 
-                                        <div class="text_box">
-                                            <a href="#none">
-                                                <h3 class="headline">"선택장애는 끝"<span>맥주</span>부탁드립니다.부탁드립니다.부탁드립니다.</h3>
-                                                <p>와인바에 들어가서 안주를 뭐로할지 고민될때 그날의 상태와 취향에따라 선택하자.</p>
-                                            </a>
-                                            <em class="date">
-                                            <!--<span>13,528회</span>-->
-                                            <span class="update">2019.11.11</span>
-                                            <span>by조이</span>
-                                            </em>
-                                        </div> 
-                                    </li>
-                                    <li>
-                                        <a href="#none" class="thumb">
-                                           <span><img src="https://cwcontent.asiae.co.kr/asiaresize/129/2019102410275842714_1571880479.jpg" alt="list08이미지"></span>
-                                        </a> 
-                                        <div class="text_box">
-                                            <a href="#none">
-                                                <h3 class="headline">"선택장애는 끝"<span>맥주</span>부탁드립니다.부탁드립니다.부탁드립니다.</h3>
-                                                <p>와인바에 들어가서 안주를 뭐로할지 고민될때 그날의 상태와 취향에따라 선택하자.</p>
-                                            </a>
-                                            <em class="date">
-                                            <!--<span>13,528회</span>-->
-                                            <span class="update">2019.11.11</span>
-                                            <span>by조이</span>
-                                            </em>
-                                        </div> 
-                                    </li>
-                                    <li>
-                                        <a href="#none" class="thumb">
-                                           <span><img src="https://cwcontent.asiae.co.kr/asiaresize/129/2018042613085680901_1524715735.jpg" alt="list09이미지"></span>
-                                        </a> 
-                                        <div class="text_box">
-                                            <a href="#none">
-                                                <h3 class="headline">"선택장애는 끝"<span>맥주</span>부탁드립니다.부탁드립니다.부탁드립니다.</h3>
-                                                <p>와인바에 들어가서 안주를 뭐로할지 고민될때 그날의 상태와 취향에따라 선택하자.</p>
-                                            </a>
-                                            <em class="date">
-                                            <!--<span>13,528회</span>-->
-                                            <span class="update">2019.11.11</span>
-                                            <span>by조이</span>
-                                            </em>
-                                        </div> 
-                                    </li>
-                                    <li>
-                                        <a href="#none" class="thumb">
-                                           <span><img src="https://cwcontent.asiae.co.kr/asiaresize/129/2019090508254249606_1567639542.jpg" alt="list10이미지"></span>
-                                        </a> 
-                                        <div class="text_box">
-                                            <a href="#none">
-                                                <h3 class="headline">"선택장애는 끝"<span>맥주</span>부탁드립니다.부탁드립니다.부탁드립니다.</h3>
-                                                <p>와인바에 들어가서 안주를 뭐로할지 고민될때 그날의 상태와 취향에따라 선택하자.</p>
-                                            </a>
-                                            <em class="date">
-                                            <!--<span>13,528회</span>-->
-                                            <span class="update">2019.11.11</span>
-                                            <span>by조이</span>
-                                            </em>
-                                        </div> 
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- //정확도 list -->
-                            <!-- 최신 list -->
-                            <div id="lst_tabcon02" class="lst_tabcon">
-                                <ul class="news_lst">
-                                    <li>
-                                        <a href="#none" class="thumb">
-                                           <span><img src="https://cwcontent.asiae.co.kr/asiaresize/129/2017071413271136130_1.jpg" alt="list01이미지"></span>
-                                        </a> 
-                                        <div class="text_box">
-                                            <a href="#none">
-                                                <h3 class="headline">"선택장애는 끝"<span>한줄처리</span>부탁드립니다.부탁드립니다.부탁드립니다.</h3>
-                                                <p>와인바에 들어가서 안주를 뭐로할지 고민될때 그날의 상태와 취향에따라 선택하자.</p>
-                                            </a>
-                                            <em class="date">
-                                            <!--<span>13,528회</span>-->
-                                            <span class="update">2019.11.11</span>
-                                            <span>by조이</span>
-                                            </em>
-                                        </div> 
-                                    </li>
-                                    <li>
-                                        <a href="#none" class="thumb">
-                                           <span><img src="https://cwcontent.asiae.co.kr/asiaresize/129/2018042613085680901_1524715735.jpg" alt="list02이미지"></span>
-                                        </a> 
-                                        <div class="text_box">
-                                            <a href="#none">
-                                                <h3 class="headline">"선택장애는 끝"<span>한줄처리</span>부탁드립니다.부탁드립니다.부탁드립니다.</h3>
-                                                <p>와인바에 들어가서 안주를 뭐로할지 고민될때 그날의 상태와 취향에따라 선택하자.</p>
-                                            </a>
-                                            <em class="date">
-                                            <!--<span>13,528회</span>-->
-                                            <span class="update">2019.11.11</span>
-                                            <span>by조이</span>
-                                            </em>
-                                        </div> 
-                                    </li>
-                                    <li>
-                                        <a href="#none" class="thumb">
-                                           <span><img src="https://cwcontent.asiae.co.kr/asiaresize/129/201704271506081869449A_1.jpg" alt="list03이미지"></span>
-                                        </a> 
-                                        <div class="text_box">
-                                            <a href="#none">
-                                                <h3 class="headline">"선택장애는 끝"<span>한줄처리</span>부탁드립니다.부탁드립니다.부탁드립니다.</h3>
-                                                <p>와인바에 들어가서 안주를 뭐로할지 고민될때 그날의 상태와 취향에따라 선택하자.</p>
-                                            </a>
-                                            <em class="date">
-                                            <!--<span>13,528회</span>-->
-                                            <span class="update">2019.11.11</span>
-                                            <span>by조이</span>
-                                            </em>
-                                        </div> 
-                                    </li>
-                                    <li>
-                                        <a href="#none" class="thumb">
-                                           <span><img src="https://cwcontent.asiae.co.kr/asiaresize/129/2019071208404440522_1562888444.jpg" alt="list04이미지"></span>
-                                        </a> 
-                                        <div class="text_box">
-                                            <a href="#none">
-                                                <h3 class="headline">"선택장애는 끝"<span>한줄처리</span>부탁드립니다.부탁드립니다.부탁드립니다.</h3>
-                                                <p>와인바에 들어가서 안주를 뭐로할지 고민될때 그날의 상태와 취향에따라 선택하자.</p>
-                                            </a>
-                                            <em class="date">
-                                            <!--<span>13,528회</span>-->
-                                            <span class="update">2019.11.11</span>
-                                            <span>by조이</span>
-                                            </em>
-                                        </div> 
-                                    </li>
-                                    <li>
-                                        <a href="#none" class="thumb">
-                                           <span><img src="http://cwcontent.asiae.co.kr/asiaresize/129/2019093007065488954_1569794815.jpg" alt="list05이미지"></span>
-                                        </a> 
-                                        <div class="text_box">
-                                            <a href="#none">
-                                                <h3 class="headline">"선택장애는 끝"<span>한줄처리</span>부탁드립니다.부탁드립니다.부탁드립니다.</h3>
-                                                <p>와인바에 들어가서 안주를 뭐로할지 고민될때 그날의 상태와 취향에따라 선택하자.</p>
-                                            </a>
-                                            <em class="date">
-                                            <!--<span>13,528회</span>-->
-                                            <span class="update">2019.11.11</span>
-                                            <span>by조이</span>
-                                            </em>
-                                        </div> 
-                                    </li>
-                                    <li>
-                                        <a href="#none" class="thumb">
-                                           <span><img src="https://cwcontent.asiae.co.kr/asiaresize/129/2019102410275842714_1571880479.jpg" alt="list06이미지"></span>
-                                        </a> 
-                                        <div class="text_box">
-                                            <a href="#none">
-                                                <h3 class="headline">"선택장애는 끝"<span>한줄처리</span>부탁드립니다.부탁드립니다.부탁드립니다.</h3>
-                                                <p>와인바에 들어가서 안주를 뭐로할지 고민될때 그날의 상태와 취향에따라 선택하자.</p>
-                                            </a>
-                                            <em class="date">
-                                            <!--<span>13,528회</span>-->
-                                            <span class="update">2019.11.11</span>
-                                            <span>by조이</span>
-                                            </em>
-                                        </div> 
-                                    </li>
-                                    <li>
-                                        <a href="#none" class="thumb">
-                                           <span><img src="http://cwcontent.asiae.co.kr/asiaresize/129/2019052309580541545_1558573085.jpg" alt="list07이미지"></span>
-                                        </a> 
-                                        <div class="text_box">
-                                            <a href="#none">
-                                                <h3 class="headline">"선택장애는 끝"<span>한줄처리</span>부탁드립니다.부탁드립니다.부탁드립니다.</h3>
-                                                <p>와인바에 들어가서 안주를 뭐로할지 고민될때 그날의 상태와 취향에따라 선택하자.</p>
-                                            </a>
-                                            <em class="date">
-                                            <!--<span>13,528회</span>-->
-                                            <span class="update">2019.11.11</span>
-                                            <span>by조이</span>
-                                            </em>
-                                        </div> 
-                                    </li>
-                                    <li>
-                                        <a href="#none" class="thumb">
-                                           <span><img src="https://cwcontent.asiae.co.kr/asiaresize/129/2017071413271136130_1.jpg" alt="list07이미지"></span>
-                                        </a> 
-                                        <div class="text_box">
-                                            <a href="#none">
-                                                <h3 class="headline">"선택장애는 끝"<span>한줄처리</span>부탁드립니다.부탁드립니다.부탁드립니다.</h3>
-                                                <p>와인바에 들어가서 안주를 뭐로할지 고민될때 그날의 상태와 취향에따라 선택하자.</p>
-                                            </a>
-                                            <em class="date">
-                                            <!--<span>13,528회</span>-->
-                                            <span class="update">2019.11.11</span>
-                                            <span>by조이</span>
-                                            </em>
-                                        </div> 
-                                    </li>
-                                    <li>
-                                        <a href="#none" class="thumb">
-                                           <span><img src="https://cwcontent.asiae.co.kr/asiaresize/129/201704271506081869449A_1.jpg" alt="list08이미지"></span>
-                                        </a> 
-                                        <div class="text_box">
-                                            <a href="#none">
-                                                <h3 class="headline">"선택장애는 끝"<span>한줄처리</span>부탁드립니다.부탁드립니다.부탁드립니다.</h3>
-                                                <p>와인바에 들어가서 안주를 뭐로할지 고민될때 그날의 상태와 취향에따라 선택하자.</p>
-                                            </a>
-                                            <em class="date">
-                                            <!--<span>13,528회</span>-->
-                                            <span class="update">2019.11.11</span>
-                                            <span>by조이</span>
-                                            </em>
-                                        </div> 
-                                    </li>
-                                    <li>
-                                        <a href="#none" class="thumb">
-                                           <span><img src="https://cwcontent.asiae.co.kr/asiaresize/129/2019102410275842714_1571880479.jpg" alt="list09이미지"></span>
-                                        </a> 
-                                        <div class="text_box">
-                                            <a href="#none">
-                                                <h3 class="headline">"선택장애는 끝"<span>한줄처리</span>부탁드립니다.부탁드립니다.부탁드립니다.</h3>
-                                                <p>와인바에 들어가서 안주를 뭐로할지 고민될때 그날의 상태와 취향에따라 선택하자.</p>
-                                            </a>
-                                            <em class="date">
-                                            <!--<span>13,528회</span>-->
-                                            <span class="update">2019.11.11</span>
-                                            <span>by조이</span>
-                                            </em>
-                                        </div> 
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- //최신 list -->
-                            
-                            <!-- paginate -->
-                            <div class="paging_comm">
-                                <form id="searchForm">
-                                    <input type="hidden" name="currentPage" value="1">
-                                    <input type="hidden" name="currentGroup" value="1">
-                                    <span class="inner_paging">
-                                        <a href="#none" class="btn_paging btn_prev"><span class="ico_corp"><img src="https://cwstatic.asiae.co.kr/drinkeat/list_arrl.png" alt="이전페이지 이동"></span></a>
-                                        <a href="#none" title="첫페이지로 이동 링크" class="link_page link_on">1</a>
-                                        <a href="#none" title="2페이지로 이동 링크" class="link_page">2</a>
-                                        <a href="#none" title="3페이지로 이동 링크" class="link_page">3</a>
-                                        <a href="#none" title="4페이지로 이동 링크" class="link_page">4</a>
-                                        <a href="#none" title="5페이지로 이동 링크" class="link_page">5</a>
-                                        <a href="#none" class="btn_paging btn_next"><span class="ico_corp"><img src="https://cwstatic.asiae.co.kr/drinkeat/list_arrR.png" alt="다음페이지 이동"></span></a>
-                                    </span>
-                                </form>
-                                </div> 
-                            <!-- //paginate -->
-                        </div>
-                        <!-- //visual_content -->
-                        <!-- visual_side -->
-                        <div class="visual_side">
-                            <div class="sch_side">
-                            <p>추천키워드</p>
-                            <ul>
-                                <li><a href="#none">담금주</a></li>
-                                <li><a href="#none">앱솔루트</a></li>
-                                <li><a href="#none">술</a></li>
-                                <li><a href="#none">힙지로</a></li>
-                                <li><a href="#none">꿀</a></li>
-                                <li><a href="#none">페스티벌</a></li>
-                                <li><a href="#none">이베리코</a></li>
-                            </ul>
-                            </div>
-                        </div>
-                        <!-- //visual_side -->
-                        
-                        <div class="dk_ad">
-                            <a href="#none" title="드링킷톡톡" class="pc_event"><img src="https://cwstatic.asiae.co.kr/drinkeat/event_ban/event_bnr.jpg" alt="드링킷톡톡"></a>
-                            <a href="#none" title="드링킷톡톡" class="m_event"><img src="https://cwstatic.asiae.co.kr/drinkeat/event_ban/mEvent_bn.png" alt="드링킷톡톡"></a>
-                        </div>   
-                            
-                    </div>
-                    <!-- //drk_inner -->    
+                    </div>   
                 </div>
                 <!-- //content -->
             </div>
-            <!-- //container -->   
-             
+            <!-- //container -->    
             <!-- footer -->
             <div class="drk_footer">
                 <div class="drk_fttop">
@@ -597,25 +270,23 @@
                 </div>
                 <div class="ft_area">
                     <div class="drk_inner">
-                        <dl class="info_t">
-                            <dt>아시아경제</dt>
-                            <dd>
-                                <address>서울특별시 중구 충무로 29 아시아미디어타워 10-11층</address>
-                                <span class="t_txt01">인터넷신문등록번호 : 서울 아00058</span>
-                                <span class="t_txt02">등록일:2019.12.01</span>
-                                <br> 
-                                <span class="t_txt03">발행편집인: 최영범</span>   
-                                <span class="t_txt04">청소년보호책임자: 조병무</span>   
-                                <span class="t_txt05">전화번호: 02) 2200-2114</span>   
-                            </dd> 
-                        </dl> 
+                        <div class="info_t">
+                            <p> 
+                                <span class="noline">아시아경제</span>
+                                <span>서울특별시 중구 충무로 29 아시아미디어타워 10-11층</span>
+                                <span>인터넷신문등록번호 : 서울 아00058</span>
+                                <span>등록일:2019.12.01</span>
+                                <span>발행편집인: 최영범</span>   
+                                <span>청소년보호책임자: 조병무</span>   
+                                <span>전화번호: 02) 2200-2114</span>  
+                            </p> 
+                        </div>  
                         <p class="warn">아시아경제(드링킷)의 모든 콘텐츠(기사)는 저작권법의 보호를 받는 바, 무단전재, 복사, 배포 등을 금합니다.</p>
                         <p class="copy">ⓒ 아시아경제 All rights reserved.</p>
                     </div>    
                 </div>
             </div>
             <!-- //footer -->
-                   
             <!-- Top 버튼 -->
             <a href="#none" class="btn_top"><img src="https://cwstatic.asiae.co.kr/drinkeat/upup.png" alt="위로가기"></a>
             <!-- //Top 버튼 -->   
