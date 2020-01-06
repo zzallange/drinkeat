@@ -23,6 +23,7 @@
 
         <title>Drinkeat</title>
         
+        <link rel="shortcut icon" type="image/x-ico" href="https://cwstatic.asiae.co.kr/icns/dk_fa.ico">
         <link rel="stylesheet" type="text/css" href="https://cwcode.asiae.co.kr/asiae_v2/font/font.css"/>
 
         <link rel="stylesheet" type="text/css" href="css/common.css">
@@ -34,7 +35,7 @@
             
             $(function (){
                 /* float_header */
-                var jbOffset = $('.float_bar').offset();
+                var jbOffset = $('.container').offset();
                 $( window ).scroll( function() {
                     if ($(document).scrollTop() > jbOffset.top ) {
                         $('.float_bar').addClass( 'float_fixed' );
@@ -61,7 +62,7 @@
                         } else { 
                             $(".share_box").css({ position: 'absolute', top: y + 'px' }); 
                         }
-                    } else { $(".share_box").css({ position: 'absolute', top: -10 + 'px' }); };
+                    } else { $(".share_box").css({ position: 'absolute', top: 5 + 'px' }); };
                 });
                 /* //share_box 2019.11.21 변경*/
                 
@@ -122,7 +123,7 @@
                 <!-- hamberMenu -->
                 <div class="visual_menu" >
                     <div class="visu_top">
-                        <a href="#none" class="visu_logo"><img src="https://cwstatic.asiae.co.kr/drinkeat/m_logo.png" alt="드링킷 로고이미지"></a>
+                        <a href="#none" class="visu_logo"><img src="https://cwstatic.asiae.co.kr/drinkeat/head_logo.png" alt="드링킷 로고이미지"></a>
                         <a href="#none" class="menubtn_x"><span><img src="https://cwstatic.asiae.co.kr/drinkeat/btn_close01.png" alt="닫기버튼 이미지"></span></a>    
                     </div>
                     <div class="visu_sidenav">
@@ -193,7 +194,7 @@
                     <!-- //hamber & dim -->
                     <!-- logo -->
                     <h1 class="dkt_logo">
-                        <a href="#none"><img src="https://cwstatic.asiae.co.kr/drinkeat/m_logo.png" alt="드링킷 로고이미지"></a>
+                        <a href="#none"><img src="https://cwstatic.asiae.co.kr/drinkeat/head_logo.png" alt="드링킷 로고이미지"></a>
                     </h1>
                     <!-- //logo -->
                     <!-- menu -->
@@ -229,7 +230,7 @@
                     </ul>
                     <!-- //menu -->
                     <button type="button" class="btn_search">
-                        <span class="ico"><img src="https://cwstatic.asiae.co.kr/drinkeat/m_sch.png" alt="찾기 아이콘"></span>
+                        <span class="ico"><img src="https://cwstatic.asiae.co.kr/drinkeat/p_sch_20191224.png" alt="찾기 아이콘"></span>
                     </button>
                     <div class="sch_dim ir" >dim</div>     
                 </div>
@@ -238,7 +239,7 @@
                 <div class="visual_search">
                     <div class="visu_top">
                         <!-- search 로고 -->   
-                        <a href="#none" class="visu_logo"><img src="https://cwstatic.asiae.co.kr/drinkeat/m_logo.png" alt="드링킷 로고이미지"></a>
+                        <a href="#none" class="visu_logo"><img src="https://cwstatic.asiae.co.kr/drinkeat/head_logo.png" alt="드링킷 로고이미지"></a>
                         <!-- //search 로고 -->
                         <!-- 닫기아이콘 -->
                         <a href="#none" class="schbtn_x"><span><img src="https://cwstatic.asiae.co.kr/drinkeat/btn_close01.png" alt="닫기버튼 이미지"></span></a>
@@ -276,7 +277,7 @@
                         <!-- hamber&Logo -->   
                         <a href="#none" title="전체메뉴 바로가기" class="btn_allmenu"><span class="btn_hamber"><img src="https://cwstatic.asiae.co.kr/drinkeat/hamber.png" alt="전체메뉴 바로가기"></span></a>
                         <!--<div class="dim ir" >dim</div>-->
-                        <h2 class="float_logo"><a href="#none" class="ir"><span><img src="https://cwstatic.asiae.co.kr/drinkeat/m_logo.png" alt="드링킷 로고"></span></a></h2>
+                        <h2 class="float_logo"><a href="#none" class="ir"><span><img src="https://cwstatic.asiae.co.kr/drinkeat/head_logo.png" alt="드링킷 로고"></span></a></h2>
                         <!-- //hamber&Logo -->
                         
                         <!-- 드링킷 메뉴 텍스트 들어갈 곳 -->
@@ -332,6 +333,11 @@
                                 <div class="colorbar ir">색상 바</div>   
                                 <img src="https://cwcontent.asiae.co.kr/asiaresize/219/2018042613085680901_1524715735.jpg" alt="메인thumb이미지">
                             </div>
+                            <!-- 2019.12.19 moblie -->
+                            <div class="mat_thumb">
+                                <div class="colorbar ir">색상 바</div>   
+                                <img src="https://cwcontent.asiae.co.kr/asiaresize/260/2018042613085680901_1524715735.jpg" alt="메인thumb이미지">
+                            </div>
                             <!-- //thumb -->
                         </div>
                         <!-- //top_area --> 
@@ -356,6 +362,7 @@
                             <!-- //date -->
                             <div class="at_cont">  
                             <!-- 쿼츠(말머리) 영역 -->
+                            <br>
                             <div class="qeout_box">
                                 <span class="icon_qeout top_qt"><img src="https://cwstatic.asiae.co.kr/drinkeat/ddaom_t.png" alt="위 따옴표"></span>
                                 <p>스페인 와인</p>
@@ -376,10 +383,16 @@
                             </div>
                             <!-- //sub_title -->
                             <!-- thumb -->
-                            <div class="cont_thumb">
+                            <div class="cont_thumb sm_thumb">
                                 <img src="https://cphoto.asiae.co.kr/listimglink/1/2019102908592150689_1572307162.jpg" alt="기사뷰 이미지">
                                 <span class="thumb_caption">썸네일 이미지 캡션입니다.썸네일 이미지 캡션입니다.썸네일 이미지 캡션입니다.</span>
                             </div>
+                            <!-- 2019.12.19 원본,작은이미지 쿼리 -->
+                            <div class="query_thumb">
+                                <img src="https://cphoto.asiae.co.kr/listimglink/1/2019102908592150689_1572307162.jpg" alt="기사뷰 이미지">
+                                <span class="thumb_caption">썸네일 이미지 캡션입니다.썸네일 이미지 캡션입니다.썸네일 이미지 캡션입니다.</span>
+                            </div>
+                            <!-- //2019.12.19 원본,작은이미지 쿼리 -->
                             <!-- //thumb -->
                             <p>11시 즈음에 숙소에 들어가니 그제서야 집주인이 깨어나 커피를 내리고 있따. 밤새 주인과 붙어 있던 고양이도 같이 나와 꼬리를 세우고 집안을 순회한다. 인사를 건네고 고기 필렛 두 장을 후라이팬에 구웠다. 지글지글 제법 맛있는 냄새가 난다. 냉장고에 넣어둔 맥주 한 병과 사과 한 알도 꺼냈다. 모닝커피를 마시는 집주인 옆에 앉아 돼지고기를 써는 점심을 먹으며 대화를 나누었다.</p>
                             <!-- 기사 입력기 -->
@@ -422,19 +435,21 @@
                         <!-- //title -->
                         <!-- previe,next content -->
                         <div class="at_inmore">
-                            <!-- 2019.12.10 이전글 다음글 없을때 a클래스명 no_ct추가 -->   
-                            <a href="#none" class="more_ct preview  no_ct">
-                                <button class="arrow arr_prev"></button>   
+                            <!-- 이전글 다음글 없을때 a클래스명 no_ct, 있을때 have_ct -->   
+                            <a href="#none" class="more_ct preview">
+                                <button class="arrow arr_prev have_ct"></button>   
                                 <span>이전글</span>
                                 <p>이전글이 없습니다.</p>
                             </a>
-                            <a href="#none" class="more_ct next">
+                            <!--<a href="#none" class="more_ct next ">
                                 <span>다음글</span>
                                 <p>기본이 진리,소주</p>
                                 <button class="arrow arr_next"></button>
-                            </a>
+                            </a>-->
+                            <!-- 이전글 다음글 없을때 a클래스명 no_ct, 있을때 have_ct --> 
                         </div>
-                        <!-- //previe,next view -->
+                        <!-- //previe,next content -->
+                        <span class="copyright">&lt;&copy; 이 구역의 주정뱅이, 드링킷 무단전재 및 배포를 금합니다&gt;</span>
                         <!-- tag&comment -->   
                         <div class="at_info">
                             <ul class="keyword">
@@ -449,8 +464,7 @@
                         <!-- //tag&comment -->
                     </div>
                     <!-- //more_article -->
-                    
-                    
+                      
                     <!-- 라이브러리 영역 -->
                     <div class="livere">라이브리 영역입니다.</div>
                     <!-- //라이브러리 영역 -->
@@ -458,7 +472,7 @@
                     <!-- 이 콘텐츠는 어때요? -->
                     <div class="cons_wrap">
                         <div class="consinbox">
-                            <h3><span>이 콘텐츠는 어때요?</span></h3>
+                            <h3><span>이 이야기는 어때요?</span></h3>
                             <div class="thumblist">
                                 <div class="colorbar ir">색상 바</div>
                                 <div class="thumb tm01">
@@ -481,11 +495,11 @@
                             </div>
                             <div class="conslist">
                                 <ul>
-                                    <li><a href="#none" class="tmli01">1.우리가 일주일에 7번 술을 마시는 이유</a></li>
-                                    <li><a href="#none" class="tmli02">2.술을 부르는 직장인 뫼비우스 1</a></li>
-                                    <li><a href="#none" class="tmli03">3.술자리 최악의 매너 6가지</a></li>
-                                    <li><a href="#none" class="tmli04">4.한 달간 술을 끊으면 생기는 몸의 변화</a></li>
-                                    <li><a href="#none" class="tmli05">5.“이것만 알면 술자리 천하무적!” 술에 잘 안 취하는 방법</a></li>
+                                    <li><a href="#none" class="tmli01"><span>01.</span> 우리가 일주일에 7번 술을 마시는 이유</a></li>
+                                    <li><a href="#none" class="tmli02"><span>02.</span> 술을 부르는 직장인 뫼비우스 1</a></li>
+                                    <li><a href="#none" class="tmli03"><span>03.</span> 술자리 최악의 매너 6가지</a></li>
+                                    <li><a href="#none" class="tmli04"><span>04.</span> 한 달간 술을 끊으면 생기는 몸의 변화</a></li>
+                                    <li><a href="#none" class="tmli05"><span>05.</span> “이것만 알면 술자리 천하무적!” 술에 잘 안 취하는 방법</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -715,7 +729,7 @@
             <!-- //sns공유 레이어 팝업 -->
                    
             <!-- Top 버튼 -->
-            <a href="#none" class="btn_top"><img src="https://cwstatic.asiae.co.kr/drinkeat/upup.png" alt="위로가기"></a>
+            <a href="#none" class="btn_top"><img src="https://cwstatic.asiae.co.kr/drinkeat/upup_20191224.png" alt="위로가기"></a>
             <!-- //Top 버튼 -->   
                     
         </div><!-- //drk_wrap -->    
