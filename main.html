@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta name="theme-color" content="#ff695c">
+<meta name="theme-color" content="#fff">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.drinkeat.co.kr">
 <meta property="og:site" content="https://">
@@ -20,8 +20,11 @@
 <meta name="twitter:creator" content="@0000000 ">
 <meta name="twitter:title" content="드링킷">
 <meta name="twitter:description" content="플레이모드 ON, 드링킷! ">
+<!-- 표준화 url -->
+<!--<link rel="canonical" href="https://www.drinkeat.co.kr"/>-->
 
-<link rel="stylesheet" type="text/css" href="https://cwcode.asiae.co.kr/asiae_v2/font/font.css"/>
+<link rel="shortcut icon" type="image/x-ico" href="https://cwstatic.asiae.co.kr/icns/dk_fa.ico">
+<link rel="stylesheet" type="text/css" href="https://cwcode.asiae.co.kr/asiae_v2/font/dkfont.css"/>
 <link rel="stylesheet" type="text/css" href="css/slick.css">
 <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -74,8 +77,8 @@
             slidesToShow: 1,
             dots:true
         });
-        /* 드링킷 컨텐츠 리스트 */
-        var photo_slide = new Swiper('#photo_slide', {
+        /* 드링킷 컨텐츠 리스트 2019.12.31주석처리 */
+        /*var photo_slide = new Swiper('#photo_slide', {
             slidesPerView: 'auto',
             spaceBetween: 0,
             freeMode: true,
@@ -87,7 +90,7 @@
                 hide: true,
             },
             grabCursor: true
-         });
+         });*/
         /* 다양한 혜택 with 드링킷 */
         $('.ban_event').slick({
             infinite: true,
@@ -110,8 +113,8 @@
                 <!-- 버튼 클릭시 보이는 메뉴 -->
                 <div class="visual_menu" >
                     <div class="visu_top">
-                        <a href="#none" class="visu_logo"><img src="https://cwstatic.asiae.co.kr/drinkeat/m_logo.png" alt="드링킷 로고이미지"></a>
-                        <a href="#none" class="menubtn_x"><span><img src="https://cwstatic.asiae.co.kr/drinkeat/btn_close01.png" alt="닫기버튼 이미지"></span></a>    
+                        <a href="#none" class="visu_logo"><img src="https://cwstatic.asiae.co.kr/drinkeat/head_logo.png" alt="드링킷 로고이미지"></a>
+                        <a href="#none" class="menubtn_x"><span><img src="https://cwstatic.asiae.co.kr/drinkeat/btn_close_20191224.png" alt="닫기버튼 이미지"></span></a>    
                     </div>
                     <div class="visu_sidenav">
                         <!-- nav01 -->   
@@ -156,8 +159,11 @@
                             <li class="second">
                                 <a href="#none"><span class="sns_ico facebk ir">페이스북</span></a>
                             </li>
-                            <li>
+                            <li class="third">
                                 <a href="#none"><span class="sns_ico plus ir">카카오플러스</span></a>
+                            </li>
+                            <li>
+                                <a href="#none"><span class="sns_ico post ir">네이버포스트</span></a>
                             </li>
                         </ul>
                         <form class="email_input">
@@ -180,7 +186,7 @@
                     <div class="menu_dim ir" >dim</div>
                     <!-- //hamberMenu & dim -->
                     <h1 class="dkt_logo">
-                        <a href="#none"><img src="https://cwstatic.asiae.co.kr/drinkeat/m_logo.png" alt="드링킷 로고이미지"></a>
+                        <a href="#none"><img src="https://cwstatic.asiae.co.kr/drinkeat/head_logo.png" alt="드링킷 로고이미지"></a>
                     </h1>
                     <!-- gnb -->
                     <ul class="drk_gnb">
@@ -215,7 +221,7 @@
                     </ul>
                     <!-- //gnb -->
                     <button type="button" class="btn_search">
-                        <span class="ico"><img src="https://cwstatic.asiae.co.kr/drinkeat/m_sch.png" alt="찾기 아이콘"></span>
+                        <span class="ico"><img src="https://cwstatic.asiae.co.kr/drinkeat/p_sch_20191224.png" alt="찾기 아이콘"></span>
                     </button>  
                     <div class="sch_dim ir" >dim</div>   
                 </div>
@@ -225,10 +231,10 @@
                 <div class="visual_search">
                     <div class="visu_top">
                         <!-- search 로고 -->   
-                        <a href="#none" class="visu_logo"><img src="https://cwstatic.asiae.co.kr/drinkeat/m_logo.png" alt="드링킷 로고이미지"></a>
+                        <a href="#none" class="visu_logo"><img src="https://cwstatic.asiae.co.kr/drinkeat/head_logo.png" alt="드링킷 로고이미지"></a>
                         <!-- //search 로고 -->
                         <!-- 닫기아이콘 -->
-                        <a href="#none" class="schbtn_x"><span><img src="https://cwstatic.asiae.co.kr/drinkeat/btn_close01.png" alt="닫기버튼 이미지"></span></a>
+                        <a href="#none" class="schbtn_x"><span><img src="https://cwstatic.asiae.co.kr/drinkeat/p_sch_20191224.png" alt="닫기버튼 이미지"></span></a>
                         <!-- //닫기아이콘 -->    
                     </div>
                     <div class="visu_serch">
@@ -264,18 +270,18 @@
                 <!-- content -->   
                 <div class="content">
                     <!-- ct_main -->
-					<div class="drk_con01 drk_main">
+					<div class="drk_main">
 						<div class="drk_visual">
                             <!-- TOP01 -->
-                            <div style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://cwcontent.asiae.co.kr/asiaresize/250/2019052309580541545_1558573085.jpg');background-position: 50% 50%;background-size: cover;background-repeat: no-repeat;">
+                            <div style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://cwcontent.asiae.co.kr/asiaresize/250/2019121010484536772_1575942526.jpg');background-position: 50% 50%;background-size: cover;background-repeat: no-repeat;">
 
                                 <!-- dk_cont1 -->
                                 <div class="top_news">
                                     <em class="ic_play ir">동영상</em>
                                     <span class="thumb"><a href="#" title="br이 빠진 상태로 두줄 출력하면 되옵니다"><img src="http://cwcontent.asiae.co.kr/asiaresize/260/2019052309580541545_1558573085.jpg" alt="br이 빠진 상태로 두줄 출력하면 되옵니다"></a></span>
-                                    <span class="m_thumb"><a href="#" title="br이 빠진 상태로 두줄 출력하면 되옵니다"><img src="http://cwcontent.asiae.co.kr/asiaresize/272/2019052309580541545_1558573085.jpg" alt="br이 빠진 상태로 두줄 출력하면 되옵니다"></a></span>
+                                    <span class="m_thumb"><a href="#" title="br이 빠진 상태로 두줄 출력하면 되옵니다"><img src="http://cwcontent.asiae.co.kr/asiaresize/267/2019121010484536772_1575942526.jpg" alt="br이 빠진 상태로 두줄 출력하면 되옵니다" ></a></span>
                                     <div class="article">
-                                    <a href="#" class="tit" title="br이 빠진 상태로 두줄 출력하면 되옵니다">br이 빠진 상태로 두줄 출력하면 되옵니다</a>
+                                    <a href="#" class="tit" title="br이 빠진 상태로 두줄 출력하면 되옵니다">술 없이는  못 본다고 전해라~</a>
                                      <span class="s_txt"><span class="a_word">문자열 따라 백그라운드 설정 한줄처리</span></span>
                                      </div>
                                      <!-- pc sns_popup -->
@@ -294,14 +300,14 @@
                             </div>
                             <!-- //TOP01 -->
                             <!-- TOP02 -->
-							<div style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://cwcontent.asiae.co.kr/asiaresize/250/2019082107391320072_1566340752.jpg');background-position: 50% 50%;background-size: cover;background-repeat: no-repeat;">
+							<div style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://cwcontent.asiae.co.kr/asiaresize/250/2019121315410244301_1576219262.jpg');background-position: 50% 50%;background-size: cover;background-repeat: no-repeat;">
 								
                                 <!-- dk_cont2 -->
                                 <div class="top_news">
-                                    <span class="thumb"><a href="#" title="br이 빠진 상태로 두줄 출력하면 되옵니다"><img src="http://cwcontent.asiae.co.kr/asiaresize/260/2019082107391320072_1566340752.jpg" alt="br이 빠진 상태로 두줄 출력하면 되옵니다"></a></span>
-                                    <span class="m_thumb"><a href="#" title="br이 빠진 상태로 두줄 출력하면 되옵니다"><img src="http://cwcontent.asiae.co.kr/asiaresize/272/2019082107391320072_1566340752.jpg" alt="br이 빠진 상태로 두줄 출력하면 되옵니다"></a></span>
+                                    <span class="thumb"><a href="#" title="br이 빠진 상태로 두줄 출력하면 되옵니다"><img src="http://cwcontent.asiae.co.kr/asiaresize/260/2019121315410244301_1576219262.jpg" alt="br이 빠진 상태로 두줄 출력하면 되옵니다"></a></span>
+                                    <span class="m_thumb"><a href="#" title="br이 빠진 상태로 두줄 출력하면 되옵니다"><img src="http://cwcontent.asiae.co.kr/asiaresize/272/2019121315410244301_1576219262.jpg" alt="br이 빠진 상태로 두줄 출력하면 되옵니다"></a></span>
                                     <div class="article">
-                                    <a href="#" class="tit" title="br이 빠진 상태로 두줄 출력하면 되옵니다">br이 빠진 상태로 두줄 출력하면 되옵니다</a>
+                                    <a href="#" class="tit" title="br이 빠진 상태로 두줄 출력하면 되옵니다">요즘 힙한 술이 뭐야</a>
                                      <span class="s_txt"><span class="a_word">문자열 따라 백그라운드 설정 한줄처리222</span></span>
                                      </div>
                                      <!-- pc sns_popup -->
@@ -324,10 +330,10 @@
 
 								<!-- dk_cont3 -->
                                 <div class="top_news">
-                                    <span class="thumb"><a href="#" title="br이 빠진 상태로 두줄 출력하면 되옵니다"><img src="http://cwcontent.asiae.co.kr/asiaresize/260/2019093007065488954_1569794815.jpg" alt="br이 빠진 상태로 두줄 출력하면 되옵니다"></a></span>
-                                    <span class="m_thumb"><a href="#" title="br이 빠진 상태로 두줄 출력하면 되옵니다"><img src="http://cwcontent.asiae.co.kr/asiaresize/272/2019093007065488954_1569794815.jpg" alt="br이 빠진 상태로 두줄 출력하면 되옵니다"></a></span>
+                                    <span class="thumb"><a href="#" title="br이 빠진 상태로 두줄 출력하면 되옵니다"><img src="http://cwcontent.asiae.co.kr/asiaresize/260/2019121617135048334_1576484029.jpg" alt="br이 빠진 상태로 두줄 출력하면 되옵니다"></a></span>
+                                    <span class="m_thumb"><a href="#" title="br이 빠진 상태로 두줄 출력하면 되옵니다"><img src="http://cwcontent.asiae.co.kr/asiaresize/272/2019121617135048334_1576484029.jpg" alt="br이 빠진 상태로 두줄 출력하면 되옵니다"></a></span>
                                     <div class="article">
-                                    <a href="#" class="tit" title="br이 빠진 상태로 두줄 출력하면 되옵니다">br이 빠진 상태로 두줄 출력하면 되옵니다</a>
+                                    <a href="#" class="tit" title="br이 빠진 상태로 두줄 출력하면 되옵니다">이젠 같이 마시개냥</a>
                                      <span class="s_txt"><span class="a_word">문자열 따라 백그라운드 설정 한줄처리3333333</span></span>
                                      </div>
                                      <!-- pc sns_popup -->
@@ -350,15 +356,18 @@
 			        <!--// ct_main -->    
                     <!-- trend -->
                     <div class="drk_inner">
-                        <div class="drk_con02 drk_trend">
-                            <h2 class="sub_tit">지금 뜨는 트렌드</h2>
+                        <div class="drk_trend">
+                            <h2 class="sub_tit">요즘, 뭐가 힙하지?</h2>
                             <!-- trend_box -->
                             <div class="trd_inwrap">
                                 <ul class="inbox">
                                     <li class="odd">
-                                        <a href="#" class="trd_bx trd_bx1">
+                                        <a href="#none" class="trd_bx trd_bx1">
                                             <span class="thumb"><img src="https://cwcontent.asiae.co.kr/asiaresize/210/2018042613085680901_1524715735.jpg" alt="incon1이미지"></span>
                                             <span class="txt_bx">
+                                                <!-- 2019.12.20 모바일 카테고리 추가 -->   
+                                                <em>술키피디아</em>   
+                                                <!-- //2019.12.20 모바일 카테고리 추가 -->
                                                 <span>안주 치트키의 새 이름,래핑카우</span>
                                             </span>
                                         </a>
@@ -373,6 +382,9 @@
                                         <a href="#none" class="trd_bx trd_bx2">
                                             <span class="thumb"><img src="https://cwcontent.asiae.co.kr/asiaresize/210/2017061211044492266_1.jpg" alt="incon1이미지"></span>
                                             <span class="txt_bx">
+                                               <!-- 2019.12.20 모바일 카테고리 추가 -->   
+                                                <em>술찍한리뷰</em>   
+                                                <!-- //2019.12.20 모바일 카테고리 추가 -->
                                                 <span>두줄처리 부탁드립니다.두줄처리 부탁드립니다</span>
                                             </span>
                                         </a>
@@ -386,7 +398,10 @@
                                     <li class="odd">
                                         <a href="#none" class="trd_bx trd_bx3">
                                             <span class="thumb"><img src="https://cwstatic.asiae.co.kr/drinkeat/trend001_3.png" alt="incon1이미지"></span>
-                                            <span class="txt_bx">
+                                            <span class="txt_bx"> 
+                                                <!-- 2019.12.20 모바일 카테고리 추가 -->   
+                                                <em>드링킷컬처</em>   
+                                                <!-- //2019.12.20 모바일 카테고리 추가 -->
                                                 <span>마시기 좋은 날, 떠나자!서울과 근교 브루어리 투어</span>
                                             </span>  
                                         </a>
@@ -401,6 +416,9 @@
                                         <a href="#none" class="trd_bx trd_bx4">
                                             <span class="thumb"><img src="https://cwstatic.asiae.co.kr/drinkeat/trend001_4.png" alt="incon1이미지"></span>
                                             <span class="txt_bx">
+                                                <!-- 2019.12.20 모바일 카테고리 추가 -->   
+                                                <em>힙플레이스</em>   
+                                                <!-- //2019.12.20 모바일 카테고리 추가 -->   
                                                 <span>한 여름,그늘 아래 둘러 앉아술이 술술 들어가는 요리</span>
                                             </span>   
                                         </a>
@@ -415,6 +433,9 @@
                                         <a href="#none" class="trd_bx trd_bx5">
                                             <span class="thumb"><img src="https://cwstatic.asiae.co.kr/drinkeat/trend001_5.png" alt="incon1이미지"></span>
                                             <span class="txt_bx">
+                                                <!-- 2019.12.20 모바일 카테고리 추가 -->   
+                                                <em>술키피디아</em>   
+                                                <!-- //2019.12.20 모바일 카테고리 추가 -->    
                                                 <span>떡볶이와 찰떡궁합인 술을 찾고 있다면</span>
                                             </span>   
                                         </a>
@@ -429,6 +450,9 @@
                                         <a href="#none" class="trd_bx trd_bx6">
                                             <span class="thumb"><img src="https://cwstatic.asiae.co.kr/drinkeat/trend001_6.png" alt="incon1이미지"></span>
                                             <span class="txt_bx">
+                                                <!-- 2019.12.20 모바일 카테고리 추가 -->   
+                                                <em>술찍한리뷰</em>   
+                                                <!-- //2019.12.20 모바일 카테고리 추가 -->    
                                                 <span>"술vs살 고민 끝" 다이어트할 때 좋은 안주와 술</span>
                                             </span> 
                                         </a>
@@ -446,7 +470,7 @@
                     </div>
                     <!-- //trend --> 
                     <!-- special -->
-                    <div class="drk_con03 drk_special">
+                    <div class="drk_special">
                         <div class="special_bg"></div>
                         <!-- pc특집 -->    
                         <div class="drk_inner">
@@ -505,10 +529,8 @@
                     <!-- //special -->    
                     <div class="drk_inner">
                         <!-- cont_area -->    
-                        <div class="drk_con04 drk_cont">
-                            <!-- 2019.11.07 제목 동일추가 -->   
-                            <h2 class="sub_tit">드링킷 컨텐츠 제목</h2> 
-                            <!-- 2019.11.07 제목 동일추가 -->   
+                        <div class="drk_cont"> 
+                            <!--<h2 class="sub_tit"></h2> -->
                             <!-- pc_conlist -->   
                             <ul class="pc_drkcont">
                                 <!-- list01 -->   
@@ -519,7 +541,7 @@
                                         </div> 
                                         <div class="txt_box">
                                             <h4 class="tit">대학내일 x 순하리 복숭아 소다 표지모델 선발</h4>
-                                            <span class="text">인간 복숭아 찾습니다.<br>진짜가 나타났다!<br>레알 복숭아 과즙 10%</span>
+                                            <span class="text">인간 복숭아 찾습니다.<br>진짜가 나타났다!</span>
                                         </div>
                                     </a>
                                     <!-- sns 공유버튼 -->
@@ -535,7 +557,7 @@
                                         </div> 
                                         <div class="txt_box">
                                             <h4 class="tit">대학내일 x 순하리 복숭아 소다 표지모델 선발</h4>
-                                            <span class="text">인간 복숭아 찾습니다.<br>진짜가 나타났다!<br>레알 복숭아 과즙 10%</span>
+                                            <span class="text">인간 복숭아 찾습니다.<br>진짜가 나타났다!</span>
                                         </div>
                                     </a>
                                     <!-- sns 공유버튼 -->
@@ -551,7 +573,7 @@
                                         </div> 
                                         <div class="txt_box">
                                             <h4 class="tit">대학내일 x 순하리 복숭아 소다 표지모델 선발</h4>
-                                            <span class="text">인간 복숭아 찾습니다.<br>진짜가 나타났다!<br>레알 복숭아 과즙 10%</span>
+                                            <span class="text">인간 복숭아 찾습니다.<br>진짜가 나타났다!</span>
                                         </div>
                                     </a>
                                     <!-- sns 공유버튼 -->
@@ -567,7 +589,7 @@
                                         </div> 
                                         <div class="txt_box">
                                             <h4 class="tit">대학내일 x 순하리 복숭아 소다 표지모델 선발</h4>
-                                            <span class="text">인간 복숭아 찾습니다.<br>진짜가 나타났다!<br>레알 복숭아 과즙 10%</span>
+                                            <span class="text">인간 복숭아 찾습니다.<br>진짜가 나타났다!</span>
                                         </div>
                                     </a>
                                     <!-- sns 공유버튼 -->
@@ -575,10 +597,26 @@
                                     <!-- sns 공유버튼 -->
                                 </li>
                                 <!-- //list04 -->
+                                <!-- list05 -->
+                                <li class="list">
+                                    <a href="#" class="list_area" title="대학내일x순하리 복숭아 소다 표지모델 선발">
+                                        <div class="thumb">
+                                            <img src="https://cwstatic.asiae.co.kr/drinkeat/thumb01_216.png" alt="대학내일x순하리 복숭아 소다 표지모델 선발">    
+                                        </div> 
+                                        <div class="txt_box">
+                                            <h4 class="tit">대학내일 x 순하리 복숭아 소다 표지모델 선발</h4>
+                                            <span class="text">인간 복숭아 찾습니다.<br>진짜가 나타났다!</span>
+                                        </div>
+                                    </a>
+                                    <!-- sns 공유버튼 -->
+                                    <a class="snspop" href="#none" title="SNS공유"><span class="more_ico ir">sns 공유하기 팝업버튼</span></a>
+                                    <!-- sns 공유버튼 -->
+                                </li>
+                                <!-- //list05 -->
                             </ul>
                             <!-- //pc_conlist -->
                             <!-- mobile_conlist -->
-                            <div class="m_drkcont">   
+                            <div class="m_drkcont" style="display: none">   
                                 <div class="drktemplate drkcont_list">
                                     <div class="photo_news">
                                     <!-- photo_slide -->
@@ -668,26 +706,25 @@
                             <!-- //mobile_conlist -->
                         </div>
                         <!-- //cont_area --> 
+                        <!-- drk_ad -->
+                        <div class="dk_ad"><a href="#none" title="드링킷 talktalk"><img src="https://cwstatic.asiae.co.kr/drinkeat/event_ban/event_bnr.jpg" alt="드링킷 talktalk"></a></div>
+                        <div class="dk_mad"><div class="drk_inner"><a href="#none" title="드링킷 talktalk"><img src="https://cwstatic.asiae.co.kr/drinkeat/dk_banm.jpg" alt="드링킷 talktalk"></a></div></div>
+                        <!-- //drk_ad -->
                     </div>
-
-                    <div class="dk_ad drk_inner"><a href="#" title="드링킷 talktalk"><img src="https://cwstatic.asiae.co.kr/drinkeat/event_ban/event_bnr.jpg" alt="드링킷 talktalk"></a></div>
-                    <div class="dk_mad"><div class="drk_inner"><a href="#" title="드링킷 talktalk"><img src="https://cwstatic.asiae.co.kr/drinkeat/dk_banm.jpg" alt="드링킷 talktalk"></a></div></div>
-
+                    
                     <!-- banner -->
                     <div class="drk_banner">
-                        <h2 class="sub_tit">다양한 혜택 with 드링킷</h2>    
+                        <h2 class="sub_tit">드링킷이 준비했어요</h2>    
                         <div class="ban_wrap">
                             <!-- event_banner -->    
                             <div class="ban_event">
                                 <!-- event01 -->   
                                 <div class="ban_list">
                                     <a href="#none" class="banner">
-                                    <!-- 2019.11.20 pc,mobile 이미지영역 -->
                                     <div class="thumb">
                                         <span class="pc"><img src="https://cwstatic.asiae.co.kr/drinkeat/banner01_pc_main.jpg" alt="이벤트 pc이미지"></span>
                                         <span class="mo"><img src="https://cwstatic.asiae.co.kr/drinkeat/banner01_m.jpg" alt="이벤트 mobile이미지"></span>
                                     </div>
-                                    <!-- //2019.11.20 pc,mobile 이미지영역 -->
                                     <div class="text">
                                         <p>아시아경제 네이버 뉴스 이벤트</p>
                                         <em class="date">기간
@@ -771,8 +808,7 @@
                             <!-- //event_banner -->
                         </div>
                     </div>
-				    <!--//banner -->
-                            
+				    <!--//banner -->    
                     <!-- sns_list -->
                     <div class="drk_sns">
                         <div class="drk_inner">
@@ -806,7 +842,6 @@
                         </div>    
                     </div>
                     <!-- //sns_list -->
-                    
                     <!-- scribe -->
                     <div class="drk_scribe">
                         <p class="tit">드링킷은 소소하지만<br> 즐거운 라이프 가이드를 제공합니다.</p>
@@ -919,7 +954,7 @@
                 <!-- //sns공유 레이어 팝업 -->
                    
                 <!-- Top 버튼 -->
-                <a href="#none" class="btn_top"><img src="https://cwstatic.asiae.co.kr/drinkeat/upup.png" alt="위로가기"></a>
+                <a href="#none" class="btn_top"><img src="https://cwstatic.asiae.co.kr/drinkeat/upup_20191224.png" alt="위로가기"></a>
                 <!-- //Top 버튼 -->   
                     
         </div><!-- //drk_wrap -->    
