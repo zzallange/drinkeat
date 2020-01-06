@@ -1,6 +1,16 @@
 @charset "utf-8";
 
-/* Font - NanumMyeongjo */
+@font-face {
+  font-family: 'JejuMy';
+  font-style: normal;
+  font-weight: 400;
+  src: url('JejuMyeongjo-Regular.eot');
+  src: url('JejuMyeongjo-Regular.eot?#iefix') format('embedded-opentype'),
+       url('JejuMyeongjo-Regular.woff2') format('woff2'),
+       url('JejuMyeongjo-Regular.woff') format('woff'),
+       url('JejuMyeongjo-Regular.ttf') format('truetype');
+}
+
 @font-face {
   font-family: 'NanumMyR';
   src: url('NanumMyeongjoR.eot');
@@ -12,6 +22,13 @@
   font-style: normal;
 }
 
+@font-face { 
+  font-family: 'AritaB'; 
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-buri-SemiBold.woff') format('woff'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
+
 @font-face {
   font-family: 'NanumMyB';
   src: url('NanumMyeongjoB.eot');
@@ -20,7 +37,7 @@
        url('NanumMyeongjoB.woff') format('woff'),
        url('NanumMyeongjoB.ttf') format('truetype');
   font-weight: normal;
-  font-style: normal;
+  font-style: normal;   
 }
 
 @font-face {
