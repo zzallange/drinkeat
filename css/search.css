@@ -13,7 +13,7 @@
 .content .visual_noct:after {content:'';display: block;clear: both;}
 .visual_noct .no_srch {text-align: center;}
 .visual_noct .no_srch {padding-bottom: 100px;}
-.visual_noct .no_srch p {margin-bottom: 30px;font-size: 25px; letter-spacing: -1px; line-height: 30px; font-family: 'NanumMyr';}
+.visual_noct .no_srch p {margin-bottom: 30px;font-size: 25px; letter-spacing: -1px; line-height: 30px; font-family: 'NanumMyR';}
 .visual_noct .no_srch p > strong {padding-right: 5px;color:#ff5b4d; }
 .visual_noct .no_srch span {font-size: 18px; letter-spacing: -2px; line-height: 27px; color: #595959;}
 /* visual_side*/
@@ -44,8 +44,8 @@
 .drk_cont ul .list .thumb {font-size: 0;font-size: 0;overflow: hidden;}
 .drk_cont ul .list .thumb img {transition: all .2s ease-in-out;}
 .drk_cont ul li:hover .list .thumb img {transform: scale(1.1);}
-.drk_cont ul .list .txt_bx {padding:20px 0 0 20px; margin-top: -4px; width: 100%; height: 130px; font-size: 19px; font-family:'NanumMyB'; line-height: 25px; letter-spacing: -1px; box-sizing: border-box; color: #111; background: #fff;}
-.drk_cont ul .list .txt_bx em {display: block;font-size: 14px;line-height: 20px;letter-spacing: -1px; font-family: 'notorkR';color: #595959;text-decoration: underline;}
+.drk_cont ul .list .txt_bx {padding:20px 0 0 20px; margin-top: -4px; width: 100%; height: 130px; font-size: 19px; font-family:'NanumMyB';line-height: 25px; letter-spacing: -1px; box-sizing: border-box; color: #111; background: #fff;}
+.drk_cont ul .list .txt_bx em {display: block;font-size: 14px;line-height: 20px;letter-spacing: -1px; font-family: 'notokrR';color: #595959;text-decoration: underline;}
 .drk_cont ul .list .txt_bx span {margin-top: 20px;width:90%;overflow: hidden; text-overflow: ellipsis;}
 
 
@@ -72,7 +72,7 @@
     .no_cont .visual_search .visu_serch .serch_input .inserch {font-size: 17px;}
     
     .visual_noct {width: 100%;border-bottom: 1px solid #efefef;}
-    .visual_noct .no_srch {padding-bottom: 45px;}
+    .visual_noct .no_srch {padding-bottom: 50px;}
     .visual_noct .no_srch p {margin-bottom: 20px;font-size: 22px; line-height: 25px;}
     .visual_noct .no_srch span {font-size: 15px; line-height: 25px; }
     .visual_side .sch_side {padding-left: 0;width:100%;}
@@ -104,7 +104,7 @@
 /* Mobile */
 @media only screen and (max-width:425px){
     .no_cont .visual_search {margin: 30px 0 50px;}
-    .content .visual_noct {padding-bottom: 40px;}
+    /*.content .visual_noct {padding-bottom: 40px;}*/
     .visual_noct .no_srch p {font-size: 20px;}
     .visual_noct .no_srch span {line-height: 23px;}
     .visual_side .sch_side ul li a {margin: 0 7px 7px 0; padding: 5px 15px; }
@@ -126,13 +126,13 @@
     .photo_news .photo_slide .photo_list > div {position: relative; float:left; width:auto; padding-left:5px; -webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin-right:5px; display: -webkit-box;display: -ms-flexbox; display: -webkit-flex;display: flex;-webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center;-ms-flex-align: center;-webkit-align-items: center; align-items:center;}
     .photo_news .photo_slide .photo_list > div:first-child {padding-left:0;}
     .photo_news .photo_slide .photo_list > div .more_ico {position: absolute; right:5%; top: 207px; width: 23px;}    
-    .photo_news .photo_slide .photo_list > div .list {display:block; position:relative; width:260px; vertical-align:top; border: 1px solid #ddd; box-sizing: border-box;}
+    .photo_news .photo_slide .photo_list > div .list {display:block; position:relative; width:260px; vertical-align:top; border: 1px solid rgba(0,0,0,.1); box-sizing: border-box;}
     .photo_news .photo_slide .photo_list > div .list .thumb, .photo_news .photo_slide .photo_list > div a figcaption {display:block; width:100%; vertical-align:top;}
     .photo_news .photo_slide .photo_list > div .list .thumb {overflow:hidden; font-size: 0;}
     .photo_news .photo_slide .photo_list > div .list .thumb img {}
     .photo_news .photo_slide .photo_list > div .list figcaption {position:relative; padding-left: 15px; height:125px; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
-    .photo_news .photo_slide .photo_list > div .list figcaption .headline {display:block; padding: 20px 0 15px; font-size: 14px; font-weight: normal; line-height:1; font-family: 'notorkR'; letter-spacing: -1px; text-decoration: underline; color:#111;}
-    .photo_news .photo_slide .photo_list > div .list figcaption .sub_tx {display: block; width: 95%; font-size:17px; line-height: 25px; font-family: 'NanumMyB'; color: #111; overflow: hidden; text-overflow: ellipsis;}
+    .photo_news .photo_slide .photo_list > div .list figcaption .headline {display:block; padding: 20px 0 15px; font-size: 14px; font-weight: normal; line-height:1; font-family: 'notokrR'; letter-spacing: -1px; text-decoration: underline; color:#111;}
+    .photo_news .photo_slide .photo_list > div .list figcaption .sub_tx {display: block; width: 95%; font-size:17px; line-height: 25px; font-family: 'NanumMyeongjo','NanumMyB'; font-weight: 600; color: #111; overflow: hidden; text-overflow: ellipsis;}
     .photo_news .photo_slide .photo_list > div .btn_ty {position:relative; width:50px; height:255px; padding:0; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
     .photo_news .photo_slide .photo_list > div button {position:absolute; top:50%; right:0; width:100%; font-size:12px; color:#595959; font-family:'notokrDem'; text-align:center; letter-spacing:-1px; -webkit-transform:translate(0, -50%); -moz-transform:translate(-0, -50%); transform:translate(0, -50%);}
     .photo_news .photo_slide .photo_list > div button .ico {display:block; width:43px; height:43px; margin:0 auto 6px; font-size:0; line-height:0; color:transparent; vertical-align:top; background:url('https://cwstatic.asiae.co.kr/m_newasiae/common/icon_sty01.png') no-repeat -144px -286px; background-size:335px 400px;}
@@ -171,7 +171,7 @@
 .lst_tabcon ul li:hover .text_box .headline,.lst_tabcon ul li:hover .text_box .headline span {text-decoration: underline;}
 .lst_tabcon ul li .text_box .headline ,.lst_tabcon ul li .text_box .headline + p {overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
 .lst_tabcon ul li .text_box .headline span {padding: 0 5px;color:#ff5b4d;}
-.lst_tabcon ul li .text_box .headline + p {line-height: 1; margin-bottom: 20px;font-size: 16px; letter-spacing: -2px; color: #595959;}
+.lst_tabcon ul li .text_box .headline + p {line-height: 1; margin-bottom: 20px;font-size: 16px; letter-spacing: -1px; color: #595959;}
 .lst_tabcon ul li .text_box .date {font-size: 13px;line-height: 1; color: #999;}
 .lst_tabcon ul li .text_box .date .update {position: relative;display: inline-block;margin-right: 10px;}
 .lst_tabcon ul li .text_box .date .update:after {content:''; position: absolute;  top: 2px; width: 1px; height: 85%; background: #ddd;}
@@ -203,8 +203,6 @@
     .lst_tabcon ul li .text_box {width: 75%;}
     .lst_tabcon ul li {padding: 25px 0;}
     .visual_side {margin-bottom: 40px;width: 100%;}
-    /*.visual_side .sch_side p {font-size: 20px; letter-spacing: -3px;}
-    .visual_side .sch_side ul li a {margin: 0 10px 10px 0; padding: 10px 15px; font-size: 15px;line-height: 25px;}*/
 }
 
 /* Mobile */
@@ -212,14 +210,13 @@
     .visual_ct .result_num {font-size: 15px;}
     .lst_tab li a {font-size: 15px;}
     .visual_ct .lst_tabcon {margin-top: 15px;}
+    .lst_tab li a.on:before {top: 7px;}
     .lst_tabcon ul {margin-bottom: 40px;}
     .lst_tabcon ul li {padding: 15px 0;}
     .lst_tabcon ul li .thumb {width: 26%;}
     .lst_tabcon ul li .text_box .headline {padding: 0 0 10px;font-size: 17px;}
     .lst_tabcon ul li .text_box .headline + p {margin-bottom: 0;font-size: 13px;}
-    .paging_comm {margin: 0;}
-    /*.visual_side .sch_side p {font-size: 17px;letter-spacing: -2px;}
-    .visual_side .sch_side ul li a {margin: 0 7px 7px 0; padding: 5px 15px; font-size: 14px; line-height: 25px; box-sizing: border-box;}*/
+    .paging_comm {margin: 0 auto 30px;}
     
     
 .sch_o .dk_ad .pc_event {display: none;}

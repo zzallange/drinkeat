@@ -1,11 +1,8 @@
 @charset "utf-8";
 
-/* common css */
 .content {padding-top: 90px;}
-/* //common css */
-
 /* List 영역 */
-.drk_list {margin-top: 80px;}
+.drk_list {margin-top: 100px;}
 .drk_list .title {margin-bottom: 3%;text-align: center;font-size: 33px;line-height: 1;letter-spacing: -2px;font-family: 'notokrLig';}
 .drk_list .list_wrap {overflow: hidden; position: relative; width: 100%;}
 .drk_list ul:after {content:''; display: block; clear: both;}
@@ -17,8 +14,8 @@
 .drk_list ul .list .thumb img {transition: all .2s ease-in-out;}
 .drk_list ul li:hover .list .thumb img {transform: scale(1.1);}
 .drk_list ul .list .txt_bx {padding:20px 0 0 20px; margin-top: -4px; width: 100%; height: 130px;  box-sizing: border-box; color: #111; background: #fff;}
-.drk_list ul .list .txt_bx em {display: inline-block;font-size: 14px;line-height: 20px;letter-spacing: -1px; font-family: 'notorkR';color: #595959;text-decoration: underline;}
-.drk_list ul .list .txt_bx span {margin-top: 15px;width:90%;overflow: hidden; text-overflow: ellipsis;font-size: 19px; font-family:'NanumMyB'; line-height: 25px; letter-spacing: -1px;}
+.drk_list ul .list .txt_bx em {display: inline-block;font-size: 14px;line-height: 20px;letter-spacing: -1px; font-family: 'notorkrR';color: #595959;text-decoration: underline;}
+.drk_list ul .list .txt_bx span {margin-top: 15px;width:90%;overflow: hidden; text-overflow: ellipsis;font-size: 21px; font-family:'NanumMyB'; line-height: 25px; letter-spacing: -1px;}
 
 .drk_list ul li .more_ico {position: absolute; right: 10px; bottom: 75px; text-align: center; width: 48px; height: 48px;}
 .drk_list ul li .more_ico span {line-height: 45px; width: 50%;}
@@ -56,8 +53,6 @@
     .drk_list ul .list .txt_bx span {margin-top: 13px;font-size: 18px;}
     .drk_list ul li .more_ico {bottom: 70px;}
     
-    /*.drk_sns {padding: 95px 0;}*/
-    /*.drk_sns .sub_tit {font-size: 31px;}*/
 }
 
 @media only screen and (max-width:768px) {  
@@ -68,25 +63,24 @@
     .drk_list {margin-top: 60px;}
     .drk_list .title {font-size: 30px;}
     .drk_list ul .list .txt_bx em {font-size: 13px;}
-    .drk_list ul .list .txt_bx span {width: 93%; font-size: 17px;}
+    .drk_list ul .list .txt_bx span {width: 93%; font-size: 20px;}
     .drk_list ul li .more_ico {right: 5px;}
-    
-}
 
+}
 /* 3개리스트는 640밑으로 모바일 화면 */
 @media only screen and (max-width:639px) {  
     .drk_list {margin-top: 50px;}
     .drk_list .title {margin-bottom: 5%;line-height: 1; font-size: 23px; font-family: 'notokrM'}
-    .drk_list ul li {margin: 0 0 5% 0; width: 100%; border: 0 none;}
-    .drk_list ul li.second {margin: 0 0 5% 0;}
+    .drk_list ul li {margin: 0 0 8% 0; width: 100%; border: 0 none;}
+    .drk_list ul li.second {margin: 0 0 8% 0;}
     .drk_list ul li a {width: 100%;}
     .drk_list ul .list .thumb {width: 100%;}
-    .drk_list ul .list .txt_bx {padding: 15px 0 0; height: auto;}
-    .drk_list ul .list .txt_bx em {display: block;}
-    .drk_list ul .list .txt_bx span {margin-top: 10px; width: 85%;}
+    .drk_list ul .list .txt_bx {padding:0; height: auto;}
+    .drk_list ul .list .txt_bx em {display: block; margin-top: 20px; font-size: 14px; line-height: 1; text-decoration: underline; color: #595959; font-family: 'notokrR';}
+    .drk_list ul .list .txt_bx span {margin-top: 15px; width: 85%; white-space: normal; font-family: 'NanumMyR'; line-height: 25px;}
     .drk_list ul li:hover .list .thumb img {transform: none;}
-    .drk_list ul li .more_ico {bottom: 3%;right: 0;}
-    /*.drk_list ul li .more_ico { top: 90%; bottom: 0;}*/
+    .drk_list ul li .more_ico {bottom: 0;right: 0;}
+    .drk_list ul li .more_ico span {width: 60%;}
     
     .sub_gnb .pc_sub {display: none;}
     .sub_gnb .m_sub {display: block;position: relative;}
@@ -106,12 +100,9 @@
     .sub_gnb .nav_bx .menu ul li a {padding: 20px 0; box-sizing: border-box; font-size: 17px;line-height: 25px;letter-spacing: -1px;color: #111;}
     .sub_gnb .nav_bx .menu ul li a.on {color: #ff695c;}
     
-    .drk_sns .sub_tit {font-size: 23px; margin-bottom: 25px;}
+    .drk_sns .sub_tit {font-size: 23px; /*margin-bottom: 25px;*/}
     .drk_sns ul li a > div > div {font-size: 14px;}
 }
-/*@media only screen and (max-width:570px) {.drk_list ul li .more_ico {top: 88%;}}
-@media only screen and (max-width:480px) { .drk_list ul li .more_ico {top: 85%;}}*/
-
 @media only screen and (max-width:425px) {  
     .dk_head .dkt_logo {top: 20px;}
     .dk_head .btn_search .ico {margin-top: 5px;}
@@ -119,34 +110,35 @@
     .visual_search .visu_top .visu_logo{width: 85px;margin-top: 35px;}
     .trd_inwrap .inbox {margin-top: 100px;}
     .layer_open {overflow: hidden;}
-    /*.drk_header {height: 105px;}*/
     .sub_gnb {top: 60px; height: 45px;}
     .gnb_fixed {top: 0;}
     .sub_gnb .inner_wrap {width: 100%;}
     
+    .drk_list ul .list .txt_bx span {width: 80%;}
+    .drk_list ul li .more_ico {top: 83%;}
+    .drk_list ul li .more_ico span {width: 55%;}
+    
     .drk_sns {padding: 50px 0;}
-    .drk_sns h3 {padding:0 0 20px 0;}
+    /*.drk_sns h3 {padding:0 0 20px 0;}*/
     /* btn_top dim안으로 */
     a.btn_top {z-index: 0;}
 } 
-/*@media only screen and (max-width:375px) { .drk_list ul li .more_ico {top: 83%;}}*/
+
 @media only screen and (max-width:320px){
-    .drk_list ul li .more_ico {bottom: 4%;}
+    .drk_list ul .list .txt_bx span {font-size: 18px;}
+    .drk_list ul li .more_ico span {width: 50%;}
 }
 
 /* event_list 영역 */
-.event_list {margin-top: 70px;}
-.event_list .list_head {position: relative; margin-bottom: 40px; }
-.event_list .list_head:after {content: ''; display: block; clear: both;}
-.event_list .list_head .title {float: left;position: relative; font-size: 33px; line-height: 1; letter-spacing: -2px; text-align: left; font-family: 'notorkL';} 
-.event_list .list_head .title:after {content: '';display: block; position: absolute;top: 2px;right: -20px; width: 2px; height: 95%;background: #111;}
-.event_list .list_head p {float: left; margin:13px 0 0 35px;font-size: 21px; line-height: 1; letter-spacing: -2px; color: #595959;}
+.e_container {padding-top: 60px;}
+.event_list {margin-top: 50px;}
+.event_list .list_head {position: relative;}
 .event_list .list_head a {position: absolute; top: 0; right: 0; padding: 7px 20px; border: 1px solid #ff695c; box-sizing: border-box; text-align: center; font-size: 17px; letter-spacing: -2px; color: #ff695c; font-family: 'notokrM'; background: #fff; transition: all .2s ease-in-out;}
 .event_list .list_head a:hover {background: #ff695c; color: #fff;}
 .event_list .list_head a .txt {margin-right: 5px;}
 .event_list .list_head a .ico {vertical-align: middle; margin-bottom: 3px;width: 7px; height: 13px; background: url('https://cwstatic.asiae.co.kr/drinkeat/pink_arrr.png') no-repeat; background-size: contain; transition: all .2s ease-in-out;}
 .event_list .list_head a:hover .ico {background: url('https://cwstatic.asiae.co.kr/drinkeat/onpink_arr.png') no-repeat;background-size: contain;}
-.event_list .list_wrap {overflow: hidden; position: relative; width: 100%;}
+.event_list .list_wrap {/*margin-top: 40px; */overflow: hidden; position: relative; width: 100%;}
 .event_list ul:after {content:''; display: block; clear: both;}
 .event_list ul li{float: left; overflow: hidden;position: relative; margin-bottom: 2%; width: 32%; border: 1px solid rgba(0,0,0,.07); box-sizing: border-box;}
 .event_list ul li.second {margin: 0 2%;}
@@ -177,19 +169,14 @@
     .event_list ul .list .txt_bx {padding: 25px 15px 0;}
     .event_list ul .list .txt_bx .tit {width: 65%;}
 }
-
 @media only screen and (max-width:768px) {
+    .event_list {margin-top: 80px;}
     .event_list .list_head {margin-bottom: 30px;}
     .event_list .list_head a.btn_win {top:-50px}
     
-    .event_list .list_head .title {font-size: 30px;}
-    /*.event_list .list_head .title:after {top: 4px;height: 90%;}*/
-    .event_list .list_head p {font-size: 19px;}
-
     .event_list ul li{width: 49%;}
     .event_list ul li.second {margin: 0 0 2% 0;}
     .event_list ul li.odd {margin: 0 2% 2% 0;}
-    
     .event_list ul .list .txt_bx .tit {width: 75%;}
     .event_list ul li .winner {bottom: 5px; width: 80px; height: 50px;}
     .event_list ul li .winner a {width: 100%;height: 100%; line-height: 35px;}
@@ -204,25 +191,21 @@
 /* 3개리스트는 640밑으로 모바일 화면 */
 @media only screen and (max-width:639px) {
     .event_list .list_head {margin-bottom: 20px;}
-    .event_list .list_head .title {font-size: 25px; font-family: 'notokrM'; width: 100%;}
-    .event_list .list_head .title:after {display: none;}
-    .event_list .list_head p {margin: 10px 0 0 0;font-size: 17px;}
     .event_list .list_head a.btn_win {padding: 5px 10px; font-size: 12px; letter-spacing: -1px;}
     .event_list .list_head a.btn_win .ico {margin-bottom: 2px;width: 6px; height: 10px; }
     
     .event_list ul li {width: 100%;}
     .event_list ul li,.event_list ul li.second, .event_list ul li.odd {margin: 0 0 5% 0;}
     
-    .paging_comm {margin: 10px 0 50px;}
+    .paging_comm {margin: 10px 0 70px;}
 } 
-
 @media only screen and (max-width:425px) {
-    .event_list .list_head .title {font-size: 21px;}
-    .event_list .list_head p {font-size: 15px;}
     .event_list .list_head a.btn_win {top: -30px;}
-    .event_list {margin-top: 55px;}
+    .event_list {margin-top: 50px;}
     .event_list ul .list .txt_bx {height: 120px; padding: 20px 20px 0;}
     .event_list ul li .winner {bottom: -5px;}
+    
+    .paging_comm {margin-bottom: 50px;}
 
 } 
 @media only screen and (max-width:320px){
