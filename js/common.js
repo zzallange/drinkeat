@@ -225,6 +225,22 @@ $(document).ready(function(){
         });
     });
 
+
+	    //Top Button
+    $(window).scroll(function() {
+        if($(window).scrollTop() > $('.brand_con01').height()){
+            $('.brand_scroll').addClass('on');
+        } else {
+            $('.brand_scroll').removeClass('on');
+        }
+    });
+    $(function(){
+        $('.brand_scroll').click(function(){
+            $('html, body').animate({scrollTop: 800}, 300);
+        });
+    });
+
+
     
 
 
