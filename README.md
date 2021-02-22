@@ -1,5 +1,5 @@
 # drinkeat
 
-just test file edit
+just test
 
 another edit change~ 🤣
